@@ -1,0 +1,48 @@
+#hover-pics{
+    margin-top: 3em;
+    padding: 0px;
+    .img-hover-box{
+        min-height: 100px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        .hover-img{
+            opacity: 0;
+            transition: opacity ease-in-out 2s;       
+        }
+    }
+
+    .img-hover-box:hover{
+        .hover-img{
+            opacity: 1;
+        }
+    }
+
+
+    #hover-box-1{
+        background-image: url('./../images/hover-pics/hover-1.jpg');
+    }
+    #hover-box-2{
+        background-image: url('./../images/hover-pics/hover-2.jpg');
+    }
+    #hover-box-3{
+        background-image: url('./../images/hover-pics/hover-3.jpg');
+    }
+    #hover-box-4{
+        background-image: url('./../images/hover-pics/hover-4.jpg');
+    }    
+}
+
+
+@media screen and (max-width:768px) {
+    #hover-pics{
+        .img-hover-box{
+            height: 100px;
+            .hover-img{
+                height: 100%;
+                width: auto;
+            }
+
+        }
+    }
+}

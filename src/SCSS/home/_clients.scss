@@ -1,0 +1,87 @@
+// TITLE
+#clients {
+    background-color: #fff;
+    padding: 3em;
+
+    .clients-title-text {
+        color: black;
+        font-weight: 500 !important;
+        margin-bottom: 0;
+        padding-bottom: 1em;
+    }
+
+    .clients-title-row {
+        padding: 1em 0;
+
+        p {
+            color: black;
+            font-weight: 500 !important;
+            margin-bottom: 0;
+        }
+    }
+
+    // OWL CAROUSEL
+    .owl-carousel-row {
+        padding: 1em 3em;
+
+        .owl-carousel {
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    // GLIDE JS
+    .glide {
+
+        // Arrow Buttons
+        .glide__arrows {
+            .glide__arrow {
+                border: none;
+
+                i {
+                    font-size: 2em;
+                }
+            }
+
+            // left arrow button
+            .glide__arrow--left {
+                position: absolute;
+                left: -5%;
+                top: 25%;
+            }
+
+            // Right Arrow Button
+            .glide__arrow--right {
+                position: absolute;
+                right: -5%;
+                top: 25%;
+            }
+        }
+
+
+        // Glide sliede img UL
+        .glide__track {
+            .glide__slides {
+                .glide__slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:800px) {
+    #clients {
+        padding: 2em 0px;
+
+        // OWL CAROUSEL
+        .owl-carousel-row {
+            padding: 1em 1em;
+        }
+    }
+}

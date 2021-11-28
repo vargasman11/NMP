@@ -1,0 +1,88 @@
+#profiles{
+    background-size: contain;
+    background-position: center;
+    .about-titles{
+        color: $red;
+        font-weight: 500;
+    }
+
+    .profiles-row{
+        justify-content: space-around;
+        padding: 0 3em;
+    }
+
+    .card{
+        width: 32.5%; 
+
+        .img-container{
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+        }
+        
+        // PROFILE PIC HOVER SETTINGS
+        #img-container-1{
+            background-image: url("./../images/team/TeamSlide-4.jpg");
+        }
+        #img-container-1:hover{
+            background-image: url("./../images/team/TeamSlide-7.jpg");
+        }
+        
+        #img-container-2{
+            background-image: url("./../images/team/TeamSlide-2.jpg");
+        }
+        #img-container-2:hover{
+            background-image: url("./../images/team/TeamSlide-3.jpg");
+        }
+        
+        #img-container-3{
+            background-image: url("./../images/team/TeamSlide-5.jpg");
+        }
+        #img-container-3:hover{
+            background-image: url("./../images/team/TeamSlide-8.jpg");
+        }
+        
+        .card-body{
+            background-color: $gray;
+            h5{
+                color: $red;
+                font-weight: 700;
+            }
+            p{}
+            a{
+                background-color: #3b3838;
+            }
+            a:hover{
+                background-color: $black;
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    #profiles{      
+        #team{
+            width: 100%;
+        .about-titles{}    
+        .profiles-row{
+            // display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1em auto;
+        }    
+        .card{
+            width: 70%;
+            // width: 300px;
+            margin: 1em 0px;
+            .img-container{}                                           
+            .card-body{
+                h5{}
+                p{}
+                a{}
+                a:hover{}
+            }
+        }
+    }
+}
+}

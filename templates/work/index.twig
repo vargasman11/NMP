@@ -1,0 +1,59 @@
+{% extends '_wrapper.twig' %}
+{% block main %}
+
+<div class="container-fluid p-0" id="work">
+    <div class="row work-header">
+        <!-- <div class="col-sm-12 p-0"> -->
+        <div class="p-0">
+            <div class="work-page-header-content">
+                <div class="container">
+                    <div class="shadow" data-aos="fade-right">
+                        <p class="display-4 m-0 text-white">Our Work</p>
+                        <ul class="list-inline m-0 hide-mobile">
+                            <li class="list-inline-item">Education &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Branding &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Marketing </li>
+                        </ul>
+                        <ul class="list-inline m-0 hide-mobile">
+                            <li class="list-inline-item">Original Content &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Live Shots &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Greenscreen </li>
+                        </ul>
+                        <ul class="list-inline m-0 show-mobile-only">
+                            <li class="list-inline-item">Education &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Branding &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Marketing </li>
+                            <li class="list-inline-item">Original Content &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Live Shots &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Greenscreen </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pt-5">
+        <div class="col-sm-12">
+            <p class="text-center display-4 text-red">Our Work</p>
+            <p class="text-center lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi nesciunt
+                amet vel?</p>
+
+        </div>
+    </div>
+    {% include('work/videos') %}
+    <div class="row" id="originalContent">
+        <div class="col-sm-12 py-5">
+            <p class="display-4 text-center">Fresh Work</p>
+{#            <p class="display-4 text-center">Previous Work</p>#}
+{#            <p class="lead text-center">Examples of past work</p>#}
+        </div>
+    </div>
+
+{#    {% include('work/originalContent') %}#}
+    {% include('work/freshWork') %}
+
+</div>
+
+
+{% endblock %}

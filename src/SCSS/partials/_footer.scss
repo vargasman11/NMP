@@ -1,0 +1,71 @@
+@import'../variables.scss';
+
+footer {
+    background-color: black;
+    color: $white;
+
+    .top-footer-row {
+        padding: 3em 3em;
+
+        .footer-col {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 1em 0px;
+        }
+
+        // nmp logo line up to the left on big screens
+        .footer-col:nth-of-type(1) {
+            justify-content: left;
+        }
+
+        .footer-col:nth-of-type(2) {
+            justify-content: center;
+        }
+
+        // .footer-col:nth-of-type(3){justify-content: flex-end;}
+        .footer-col:nth-of-type(3) {
+            justify-content: center;
+        }
+
+        .footer-col:nth-of-type(4) {
+            justify-content: flex-end;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        .footer-img {
+            height: 100px;
+            display: inline-block;
+        }
+
+        .contact-column {
+            p {
+                color: $white;
+            }
+
+            a {
+                color: $white;
+            }
+        }
+    }
+
+    .bottom-footer-row {
+        background-color: #222222;
+        padding: .5em 0;
+    }
+
+}
+
+
+@media (max-width: 991.98px) {
+    footer {
+        .top-footer-row {
+            .footer-col:nth-of-type(1) {
+                justify-content: center;
+            }
+        }
+    }
+}

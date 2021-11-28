@@ -1,0 +1,174 @@
+#boxCTA {
+    background: $top-bottom-gradient;
+    h1{
+        font-weight: 500 !important;
+    }
+    // TOP TEXT BLOCK
+    #services {
+        background: $cta-gradient;
+      
+        .col-sm-12 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            h1 {
+                color: $red;
+                font-size: 3.5em;
+                text-align: center;
+                font-weight: 300;
+            }
+
+            p {
+                font-size: 1.4em;
+                text-emphasis: center;
+                width: 70%;
+                margin: 0 auto;
+                text-align: center;
+                font-weight: 300;
+            }
+        }
+    }
+
+    p {  
+        color: #3b3838;
+    }
+
+    // Row where boxes are next to each other
+    .second-boxCTA-row {
+        padding: 6em 0px 4em;
+        justify-content: center;
+    }
+
+    // BOXES LEFT RIGHT AND HOVER STYLES
+
+    .box-popup {
+        display: block;
+        padding: 1em;
+        margin-bottom: 0;
+    }
+
+    #production-box-service {
+        background-image: url('./../images/heros/hero-img-2.jpg');
+    }
+
+    #studios-box-service {
+        background-image: url('./../images/services/services-broadcasting.png');
+        position: relative;
+    }
+
+    // BOX CLASSES IN GENERAL
+    .services-3-col {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        width: 50%;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+
+        .service-col-content {
+            color: $red;
+            background-color: rgba(0, 0, 0, .3);
+            min-height: 400px;
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .service-col-content-text {
+                position: relative;
+                padding: 1em;
+
+                h1 {
+                    text-align: center;
+                    margin-bottom: 0;
+                    color: $white;
+                    padding-top: .5em 1em;
+                }
+            }
+
+            .hover-content-box {
+                height: 100%;
+                position: absolute;
+                top: 0;
+                display: flex;
+                display: none;
+                justify-content: center;
+                flex-direction: column;
+                align-content: center;
+                padding: 2em;
+
+                p {
+                    font-size: 1.2em;
+                    color: #000;
+                    color: $white;
+                }
+
+                .service-content-list {
+                    font-weight: 500;
+                    width: 60%;
+                    margin: 5% auto;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 1em;
+                }
+
+                // LEARN MORE BUTTONS         
+                .btn {
+                    display: block;
+                    background: red;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    color: $white;
+                    border-radius: 0;
+                }
+
+                .btn:hover {
+                    background-color: red;
+                }
+            }
+
+        }
+
+        // Hover styles
+        .service-col-content:hover {
+            cursor: pointer;
+
+            .service-col-content-text {
+                display: none;
+            }
+
+            .hover-content-box {
+                display: flex;
+            }
+        }
+
+    }
+
+    .services-3-col:nth-of-type(2) {
+        // margin-left: 1%;
+    }
+}
+
+
+@media (max-width:720px){
+    #boxCTA {
+           // Row where boxes are next to each other, stacking one on top of ther other.
+           .second-boxCTA-row {
+            padding: 4em 0px 2em;
+        }
+        .services-3-col {
+            // width: 80%;
+            width: 90%;
+        }
+        .services-3-col:nth-child(2) {
+            margin-top: 4em;
+        }             
+    }
+}

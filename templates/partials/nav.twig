@@ -1,0 +1,99 @@
+<div class="container-fluid" id="nav">
+    <!-- <div class="container p-0"> -->
+    <!-- DESKTOP MENU -->
+    <nav class="main-nav">
+        <a href="/" class="nav__home"><img src="/images/logos/nav-logo.png" class="img-fluid" alt=""></a>
+        <ul class="list-inline nav__primary-menu">
+
+            <li class="list-inline-item primary-item">
+                {% if craft.app.request.getSegment(1) == 'services' %}
+                <a class="nav-link text-red" href="/services">Services</a>
+                {% elseif  craft.app.request.getSegment(1) != 'services' %}
+                <a class="nav-link" href="/services">Services</a>
+                {% endif %}
+                <ul class="nav__sub-menu">
+                    <li><a href="/services#production-container">Production</a></li>
+                    <li><a href="/services#post-container">Post</a></li>
+                    <li><a href="/services#broadcasting-container">Broadcasting</a></li>
+                </ul>
+            </li>
+
+            <li class="list-inline-item primary-item">
+                {% if craft.app.request.getSegment(1) == 'studios' %}
+                <a class="nav-link text-red" href="/studios">Studios</a>
+                {% elseif craft.app.request.getSegment(1) != 'studios'%}                
+                <a class="nav-link" href="/studios">Studios</a>
+                {% endif %}
+                     <ul class="nav__sub-menu">
+                        <!-- <li><a href="#studio-a">Studio A</a></li> -->
+                        <li><a href="/studios/studio">Studio A</a></li>
+                        <li><a href="/studios/studio-b">Studio B</a></li>
+                        <li><a href="/studios/rooftop">Rooftop</a></li>
+                        <li><a href="/studios/studio-d"> Eastside Stages Studio D</a></li>
+                        <li><a href="/studios/studio-e">Eastside Stages Studio E</a></li>
+                    </ul>
+            </li> 
+            <li class="list-inline-item primary-item">
+                {% if craft.app.request.getSegment(1) == 'work' %}
+                <a class="nav-link text-red" href="/work">Our Work</a>
+                {% elseif craft.app.request.getSegment(1) != 'work' %}                
+                <a class="nav-link" href="/work">Our Work</a>
+                {% endif %}
+            </li>
+            <li class="list-inline-item primary-item">
+                {% if craft.app.request.getSegment(1) == 'about' %}
+                <a class="nav-link text-red" href="/about">About</a>
+                {% elseif craft.app.request.getSegment(1) != 'about' %}
+                <a class="nav-link" href="/about">About</a>
+                {% endif %}
+                <ul class="nav__sub-menu" style="transform: translateX(-35%);">
+                    <li><a href="/about#profiles">Team</a></li>
+                    <li><a href="/about#sustainability-header">Sustainability</a></li>
+                </ul>
+            </li>
+            <li class="list-inline-item primary-item">
+            <a href="mailto:info@nmpfilms.com" target="_blank" class="list-inline-item primary-item btn btn-contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    {# ----------------- #}
+    <!-- MOBILE MENU -->
+    {# ---------------- #}
+
+    <nav class="mobile-nav">
+        <!-- Company Logo -->
+        <a href="/" class="nav__home"><img class="img-fluid" src="/images/logos/nav-logo.png" alt=""></a>
+        <!-- menu button -->
+        <div id="mobile-nav__menu-btn"><i class="fas fa-plus-square"></i></div>
+    </nav>
+    <ul class="mobile-nav__primary-menu">
+        <li class="mobile-nav__li"><a href="#">Services</a>
+            <ul class="mobile-nav__sub-menu">
+                <li class="mobile-nav__sub-menu__li"><a href="#">Production</a></li>
+                <li class="mobile-nav__sub-menu__li"><a href="#">Post</a></li>
+                <li class="mobile-nav__sub-menu__li"><a href="#">Broadcasting</a></li>
+            </ul>
+        </li>
+        <li class="mobile-nav__li"><a href="#">Studios</a>
+            <ul class="mobile-nav__sub-menu">
+                <li class="mobile-nav__sub-menu__li"><a href="#">Studio A</a></li>
+                <li class="mobile-nav__sub-menu__li"><a href="#">Studio B</a></li>
+                <li class="mobile-nav__sub-menu__li"><a href="#">Rooftop</a></li>
+                <li class="mobile-nav__sub-menu__li"><a href="#">Eastside Stage</a></li>
+                <li class="mobile-nav__sub-menu__li"><a href="#">Studio D</a></li>
+                <li class="mobile-nav__sub-menu__li"><a href="#">Studio E</a></li>
+            </ul>
+        </li>
+        <li class="mobile-nav__li"><a href="/work">Our Work</a></li>
+        <li class="mobile-nav__li"><a href="#">Work</a>
+            <ul class="mobile-nav__sub-menu">
+                <li class="mobile-nav__sub-menu__li"><a href="#">Team</a></li>
+                <li class="mobile-nav__sub-menu__li"><a href="#">Sustainability</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!-- </div> -->
+</div>

@@ -1,0 +1,19 @@
+.text-blurb {    
+    // background: #FFFFFF;
+    background: $cta-gradient;
+    // background: #c6c6c6;
+    // background: -webkit-radial-gradient(center, #FFFFFF, #EDEAE6);
+    // background: -moz-radial-gradient(center, #FFFFFF, #EDEAE6);
+    // background: radial-gradient(ellipse at center, #FFFFFF, #EDEAE6);
+    padding: 3em 2em;
+    h1{
+        color: $red !important;
+        font-weight: 500;    
+    }
+    p {
+        color: $black;
+        // font-size: 1.6em;
+        font-size: 1.4em;
+        font-weight: 300;
+    }
+}

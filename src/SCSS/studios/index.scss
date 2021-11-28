@@ -1,0 +1,319 @@
+@import'../variables.scss';
+@import 'page';
+@import 'studioCTA';
+
+#studio {
+
+    // HEADER
+    .studio-header {
+        position: relative;
+        // height: 350px;
+        height: 450px;
+        overflow: hidden;
+
+        .studio__title-container {
+            position: absolute;
+            background-image: url('./../images/heros/hero-img-2.jpg');
+            background-size: cover;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            .shadow {
+                background-color: rgba(59, 56, 56, 0.8);
+                padding: 1em 3em 1.8em;
+                // margin-left: 3em;
+                margin-left: 4em;
+                margin-top: 100px;
+            }
+
+
+            p {
+                color: #fff;
+                border-radius: 5px;
+            }
+
+            ul {
+                li {
+                    color: $white;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+
+    // Studio Circles
+    .studio__cirles-row {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 3em 3em 5em;
+        align-items: center;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(237, 234, 230, 1) 50%, rgba(255, 255, 255, 1) 100%);
+
+        .display-4 {
+            color: #cf0015;
+            font-size: 3.5em;
+            text-align: center;
+            font-weight: 500 !important;
+        }
+
+        .studio__circle {
+            height: 200px;
+            width: 19.25%;
+            margin: 5px;
+            background-position: center;
+            background-size: cover;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: ease-in-out .5s;
+            position: relative;
+
+            .studio_circle-bg {
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: 1;
+            }
+
+            a {
+                color: #ffffff;
+                font-size: 1.5em;
+                text-decoration: none;
+                overflow: hidden;
+                position: absolute;
+                z-index: 50;
+                height: 100%;
+                text-align: center;
+                width: 100%;
+                bottom: 0;
+
+                p {
+                    background-color: rgba(59, 56, 56, .7);
+                    margin-bottom: 0;
+                    color: $white;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                }
+            }
+
+        }
+
+        .studio__circle:hover {
+            // margin-top: -1em;
+            transform: translateY(-1em);
+        }
+
+        #studio__cicle-a {
+            background-image: url('./../images/studios/circles-studio-a.jpg');
+        }
+
+        #studio__cicle-b {
+            background-image: url('./../images/studios/circles-studio-b.jpg');
+        }
+
+        #studio__cicle-rooftoop {
+            background-image: url('./../images/studios/circles-studio-rooftop.jpeg');
+        }
+
+        #studio__cicle-d {
+            background-image: url('./../images/studios/cirlcles-studio-d.png');
+        }
+
+        #studio__cicle-e {
+            background-image: url('./../images/studios/circles-studio-e.jpg');
+        }
+
+    }
+
+    // mwba Stripe
+    #mwbaStripe {
+        background: $cta-gradient;
+        padding: 3em 2em;
+
+        p {
+            color: $black;
+            font-size: 1.4em;
+        }
+    }
+
+    // Studios Row styles
+    .studios-row {
+        background-color: #EDEAE6;
+
+        .four-images {
+            display: block;
+            padding: 1.5em 0px .5em;
+            text-align: center;
+
+            h1 {
+                margin-bottom: .75em;
+                font-weight: 300;
+            }
+
+            a {
+                width: 24%;
+                margin: 0 auto;
+            }
+        }
+
+        .studio-container {
+            padding: 4em 4em 5em;
+
+            .display-4 {
+                padding-bottom: .5em;
+                text-align: center;
+                color: $red;
+            }
+
+            .btn {
+                background-color: #3b3838;
+                color: $white;
+            }
+
+            .btn:hover {
+                background-color: $red;
+                color: $white;
+            }
+
+        }
+
+        .studio-img-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+            a {
+                display: inline-block;
+
+                img {
+                    transition: all ease-in-out .2s;
+                }
+            }
+
+            a:hover,
+            a:active,
+            a:focus,
+            a:focus-within {
+                color: transparent !important;
+            }
+
+            .four-images-img-link:hover {
+                img {
+                    margin-top: -15px;
+                }
+            }
+        }
+
+        .card-col {
+            .card-col-content {
+                width: 75%;
+                padding: 1em;
+                border: solid 1px #d6d6d6;
+                background-color: #fff;
+                margin: 0 auto;
+
+                ul {
+                    li {
+                        background-color: inherit;
+                    }
+                }
+            }
+
+            .card-col-content-right {
+                margin-left: auto;
+            }
+
+        }
+    }
+}
+
+
+
+// HELPER CLASSES
+
+.border-right-col {
+    // border-right: solid 2px #646464
+    border-right: solid 2px $gray;
+}
+
+.border-left-col {
+    // border-left: solid 2px #646464
+    border-left: solid 2px $white;
+}
+
+.show-mobile-only {
+    display: none;
+}
+
+@media(max-width:1100px) {
+    // Studio Circles
+    .studio__cirles-row {                     
+        .studio__circle {
+            width: 275px !important;
+            margin: 12px !important;
+        }
+    }
+}
+
+
+@media(max-width:768px) {
+    #studio {
+        .studio-header {
+            .studio__title-container {
+                .shadow {
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 80%;
+                }
+
+
+                p {
+                    color: #fff;
+                    // padding: 1em 2em;
+                    // background-color: rgba(0, 0, 0, .7);
+                    border-radius: 5px;
+                }
+
+                ul {
+                    li {
+                        color: $white;
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+        .show-mobile-only {
+            display: block;
+        }
+        .hide-mobile{
+            display: none;
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+    #studio{
+        .studios-row {
+            .card-col{
+                .card-col-content {
+                    width: 100% !important;
+
+                }
+            }
+        }
+    }       
+}

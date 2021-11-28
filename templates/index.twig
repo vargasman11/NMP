@@ -1,0 +1,19 @@
+{% extends '_wrapper.twig' %}
+{% block main %}
+{% include('partials/header') %}
+<!-- Naviation -->
+{% include('partials/nav') %}
+{% include('home/jumbo') %}
+<!-- BOX CTA -->
+{% include('home/boxCTA') %}
+<!-- CTA -->
+{% include('partials/tvShowCta') %}
+{# {% include('partials/mwbe') %} #}
+<!-- HOVER PICS -->
+{% include('home/hover-pics') %}
+{# {% include('home/contactCTA') %} #}
+<!-- CLIENTS -->
+{% include('home/clients') %}
+{% include('partials/feed') %}
+ {# {% include('home/contactCTA') %} #}
+{%  endblock %}

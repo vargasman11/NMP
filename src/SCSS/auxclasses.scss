@@ -1,0 +1,27 @@
+// Buttons
+.btn-red{
+    background-color: $red;
+    color: $white;
+}
+
+.btn-red:hover{
+    background-color: $gold;
+    color: $white;
+    border: 1px solid $gold;
+}
+
+
+// Text Color
+.text-gold{
+    color: $gold;
+    font-weight: 400;
+}
+.text-red{
+    color: $red !important;
+    font-weight: 500;
+}
+
+// Border-color
+.border-red{
+    border-color: $red !important;
+}

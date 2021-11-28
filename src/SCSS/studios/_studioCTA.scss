@@ -1,0 +1,16 @@
+#studioCTA{
+    padding: 4rem 3rem;
+    // background-color: #c0bfbe;
+    background: $cta-gradient;
+    p{
+        color: $red;
+        font-weight: 500;
+    }
+    .btn{
+        background-color: #3b3838;
+        color: $white;
+    }
+    .btn:hover{
+        background-color: $red;
+    }
+}

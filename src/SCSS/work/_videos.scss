@@ -1,0 +1,43 @@
+.video-row{
+    // background-image: url("./../images/bg/white.jpg");
+    // padding: 5em 3em;
+    padding: 2em 3em 3em;
+    .vid-display{
+        display: flex;
+        flex-wrap: wrap;       
+        justify-content: center;
+        padding: 2em 0;
+
+        .vidbox{
+            width: 32%;        
+            margin: 5px;
+            overflow: hidden;
+            h4{
+                // color: $red;
+                // color: $gold;
+                color: $white;
+                text-align: center;
+                padding: .5em 0px;
+            }
+            .embed-responsive{
+                // border-radius: 5px;
+            }
+        }
+    }
+
+}
+
+@media(max-width:768px) {
+    .video-row{       
+        .vid-display{
+            display: flex;
+            flex-wrap: wrap;       
+            justify-content: center;
+            padding: 2em 0;
+    
+            .vidbox{
+                width: 300px;
+            }
+        }
+    }
+}

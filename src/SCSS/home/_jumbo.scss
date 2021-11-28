@@ -1,0 +1,54 @@
+#jumbo {
+    .jumbo-header {
+        background-image: url('./../images/jumboSlide/slide-3.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        // height: 350px;
+        height: 450px;
+
+        .shadow {
+            background-color: rgba(59, 56, 56, .8);
+            // background-color: red;
+            text-align: left;
+            // width: 45%;
+            padding: 1em 3em 1.8em;
+            margin-left: 3em;
+            margin-top: 100px;
+        }
+
+
+        .jumbo-page-header-content {
+            // background-color: rgba(0, 0, 0, .7);
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            ul {
+                li {
+                    font-size: 1.2em;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:768px) {
+    #jumbo {
+        .jumbo-header {
+            .shadow {
+                margin-left: auto;
+                margin-right: auto;
+                width: 80%;
+                .display-4{
+                    font-size: 2em;
+                }
+            }
+            .jumbo-page-header-content {
+                margin: 0 auto;
+            }
+        }
+    }
+}

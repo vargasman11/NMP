@@ -1,0 +1,38 @@
+// Theme Colors
+$red:#cf0015;
+$black:#181c16;
+$gold:#c5a173;
+$gray:#edeae6;
+$white:#ffffff;
+$scott-gray:#cbcbcb;
+
+// Hover Colors
+$red-hover:#cf4452;
+$black-hover:#1f201f;
+$gold-hover:#c9baa8;
+$gray-hover:#f0e3d2;
+$white-hover:#dbdbdb;
+
+// SCOTT's Colors 
+$color-1:#d9d3cf;
+$color-2:#c8b6ac;
+$color-3:#e0d8d4;
+$scott-gray: #3b3838;
+
+// Borders
+$border-radius: 1em;
+
+// GOOGLE FONTS
+// font-family: 'Roboto', sans-serif;
+$roboto: 'Roboto', sans-serif;
+$lato: 'Lato', sans-serif;
+
+//Gradients
+$top-bottom-gradient:linear-gradient(180deg, #edeae6 0%, #ffffff 100%);
+$bottom-top-gradient:linear-gradient(180deg, white 0%, #edeae6 100%);
+$middle-gradient: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(237, 234, 230, 1) 50%, rgba(255, 255, 255, 1) 100%);
+$cta-gradient:  radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
+
+// Box Shadows
+$shadow-1: 0px 0px 10px 0px rgba(0,0,0,0.75);
+$shadow-red: 0px 0px 5px 5px rgba(255, 0, 0, 0.75);

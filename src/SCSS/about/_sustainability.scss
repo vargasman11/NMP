@@ -1,0 +1,77 @@
+#sustainability-header{
+    background-image: url('./../images/commitment-1.jpg');
+    background-size: cover;
+    background-position: center;
+    .sus-header{
+        background-color: rgba(0,0,0, .5);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+    }
+}
+
+#sus-content{
+    background-color: $scott-gray;
+    color: $white;
+    padding: 0 3em;
+
+    #sus-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        // padding: 0;
+        .img-block{
+            // width:18%;
+            background-size: cover;
+            background-position: bottom;            
+            width:20%;
+            // width:18rem;
+            // margin: 1em;
+            height: 175px;
+            background-color: red;
+            img{
+                display: none;
+            }
+        }
+
+        // Set bg images
+        #img-block-1{
+            background-image: url("./../images/sus/composted.jpg");
+        }
+        #img-block-2{
+            background-image: url("./../images/sus/hybrid.jpg");
+        }
+        #img-block-3{
+            background-image: url("./../images/sus/leftovers.jpg");
+        }
+        #img-block-4{
+            background-image: url("./../images/sus/plant-based.jpg");
+        }
+        #img-block-5{
+            background-image: url("./../images/sus/solar.jpg");
+        }
+    }
+}
+
+@media(max-width:768px) {
+    #sustainability-header{  
+        .sus-header{    
+        }
+    }
+    
+    #sus-content{
+        #sus-images{    
+            flex-direction: column;      
+            align-items: center;
+            .img-block{    
+                width: 85%; 
+                margin: 1em 0px;       
+                img{
+                }
+            }         
+        }
+    }    
+}

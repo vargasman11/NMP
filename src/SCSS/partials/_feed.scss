@@ -1,0 +1,21 @@
+#feed {
+background: radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
+padding-bottom: 2em;
+   .feed-title {
+        color: #cf0015;
+        font-size: 3.5em;
+        text-align: center;
+        font-weight: 500;
+        padding: 0.75em 0;
+    }
+    .feed-title:hover {
+        color: #ee2e42;
+        text-decoration: none;
+    }
+
+
+    button{
+        background-color:  #cf0015;
+        color: #fff;
+    }
+}

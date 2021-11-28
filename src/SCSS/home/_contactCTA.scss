@@ -1,0 +1,25 @@
+#contactCTA {    
+    // background-color:#c6c6c6;
+    background: $cta-gradient;
+    .lead {
+        // color:#3b3838;    
+        color: $red;
+        font-weight: normal;
+        font-size: 1.4em;
+        margin-bottom: 0;
+    }
+    .display-4 {
+        color: $red;
+        font-weight: 500 !important;
+        // color: $scott-gray;
+        // margin-bottom: 0;
+    }
+    .btn {
+        background-color: #3b3838;
+        color: $white;
+    }
+    .btn:hover {
+        background-color: $red;
+        color: $white;
+    }
+}

@@ -1,0 +1,44 @@
+@import'jquery';
+@import'variables';
+@import'auxclasses.scss';
+@import'partials/index.scss';
+@import'studios/index.scss';
+@import'about/index.scss';
+@import'work/index.scss';
+@import'home/index.scss';
+@import'services/index.scss';
+
+html {
+    scroll-behavior: smooth;
+  }
+
+html,
+body{
+    overflow-x: hidden;
+}
+
+
+
+*{
+  font-family: $lato;
+}
+
+
+
+// CLEAR WIDGET STYLES
+.eapps-remove-link,
+.eui-widget-title {
+  display: none !important;
+}
+
+.display-none{
+  display: none !important;
+}
+#eapps-instagram-feed-1 > a{
+  position: fixed !important;
+}
+
+#eapps-instagram-feed-1 > a[style]{
+  display: none !important;
+}
+
