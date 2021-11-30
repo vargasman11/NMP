@@ -1,5 +1,5 @@
-{% include('partials/header') %}
-{% include('partials/nav') %}
+{% extends '_wrapper.twig' %}
+{% block main %}
 
 <div class="container-fluid studio-page" id="studio-page-a">
     <!-- header section -->
@@ -198,21 +198,24 @@
                 adipisci ratione aliquid, repellat nesciunt sequi cupiditate.</p>
             <br>
 
-            <div class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                    ante.
-                </p>
-                <div class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                </div>
-            </div>
-            <br>
-            <div class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                    ante.
-                </p>
-                <div class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                </div>
-            </div>
+            <figure>
+                <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+
+            <figure>
+                <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+            </figure>
+
         </div>
         <!-- </div>
     </div> -->
@@ -256,6 +259,4 @@
 
 </div>
 
-
-{% include('partials/footer') %}
-{% include('partials/closure') %}
+{%  endblock %}

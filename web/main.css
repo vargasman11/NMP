@@ -99,6 +99,7 @@
 }
 #nav .main-nav .nav__primary-menu .primary-item .nav__sub-menu li a {
   color: #181c16;
+  text-decoration: none;
   padding: 1em;
   height: 100%;
   width: 100%;
@@ -1555,6 +1556,7 @@ footer .bottom-footer-row {
   justify-content: center;
   align-items: center;
   transition: ease-in-out all 0.2s;
+  text-decoration: none !important;
 }
 #service-boxes .img-btn-container .darken-container {
   height: 100%;
