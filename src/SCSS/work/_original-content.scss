@@ -3,19 +3,12 @@
     .contentDisplay{
         display: flex;
         flex-wrap: wrap;
-        // justify-content: start;
         justify-content: center;
-        // justify-content: space-evenly;
         align-items: center;
-        // transform: translateX(2%);
         .contentBox{
-            // width: 23%;
-            width: 24%;
-            // margin: 1em;
-            // margin: 1%;
+            //width: 24%;
             margin: 5px;
             transition: all .3s ease-in-out;
-            // box-shadow: $shadow-1;
         }
         .contentBox:hover{
             transform: scale(1.05);

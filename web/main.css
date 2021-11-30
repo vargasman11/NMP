@@ -997,7 +997,6 @@ footer .bottom-footer-row {
   align-items: center;
 }
 #originalContentContainer .contentDisplay .contentBox {
-  width: 24%;
   margin: 5px;
   transition: all 0.3s ease-in-out;
 }
