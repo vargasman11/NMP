@@ -1457,14 +1457,14 @@ footer .bottom-footer-row {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 }
 #services .service-container .service-block p {
   padding: 1em 0px;
 }
 #services .service-container .service-block .img-inner {
-  bottom: 0;
-  left: 0;
+  margin-top: auto;
 }
 #services .service-container .service-block h1 {
   font-size: 3em;
