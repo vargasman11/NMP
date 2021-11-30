@@ -1440,84 +1440,39 @@ footer .bottom-footer-row {
   }
 }
 #services {
-  background: radial-gradient(ellipse at center, #FFFFFF, #EDEAE6);
-  min-height: 200px;
-  padding: 2em 0px;
-}
-#services h1 {
-  color: #cf0015;
-  font-size: 3.5em;
-  text-align: center;
-  font-weight: 400;
-}
-#services p {
-  font-size: 1.4em;
-  text-emphasis: center;
-  width: 70%;
-  margin: 0 auto;
-  font-weight: normal;
-}
-#services .img-row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#services .img-row .creative__img-container {
-  height: 200px;
-  width: 200px;
-  overflow: hidden;
-  border-radius: 50%;
-  background-position: center;
-  background-size: cover;
-}
-#services .img-row #creative__img-1 {
-  background-image: url(c87db61766099b3073f8.jpg);
-}
-#services .img-row #creative__img-2 {
-  background-image: url(c9c7f3407edd9a054ae3.jpg);
-}
-#services .img-row #creative__img-3 {
-  background-image: url(cf7cab10fd62792e3fe9.jpg);
-}
-#services .img-row #creative__img-4 {
-  background-image: url(539a36058535346dee2e.jpg);
-}
-
-#servicesTwo {
   padding: 3em;
 }
-#servicesTwo #broadcasting-container,
-#servicesTwo #production-container {
+#services #broadcasting-container,
+#services #production-container {
   background-color: #edeae6;
   padding: 5em 4em;
 }
-#servicesTwo .service-container {
+#services .service-container {
   padding: 5em 4em;
 }
-#servicesTwo .service-container .grey-block-col {
+#services .service-container .grey-block-col {
   background-color: #666666;
 }
-#servicesTwo .service-container .service-block {
+#services .service-container .service-block {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 400px;
 }
-#servicesTwo .service-container .service-block p {
+#services .service-container .service-block p {
   padding: 1em 0px;
 }
-#servicesTwo .service-container .service-block .img-inner {
-  position: absolute;
+#services .service-container .service-block .img-inner {
   bottom: 0;
   left: 0;
 }
-#servicesTwo .service-container .service-block h1 {
+#services .service-container .service-block h1 {
   font-size: 3em;
 }
-#servicesTwo .service-container .service-block .service-block-title {
+#services .service-container .service-block .service-block-title {
   height: 100%;
 }
-#servicesTwo .service-container .service-block .br-gradient-span {
+#services .service-container .service-block .br-gradient-span {
   display: block;
   height: 0.2rem;
   width: 30%;
@@ -1525,7 +1480,7 @@ footer .bottom-footer-row {
   border-radius: 5px;
   background: #cf0015;
 }
-#servicesTwo .service-container .service-block div {
+#services .service-container .service-block div {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -1538,10 +1493,10 @@ footer .bottom-footer-row {
   align-items: center;
   min-height: 250px;
 }
-#servicesTwo .service-container .service-block:nth-child(odd) {
+#services .service-container .service-block:nth-child(odd) {
   background-color: #edeae6;
 }
-#servicesTwo .service-container .service-block-list {
+#services .service-container .service-block-list {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1550,33 +1505,33 @@ footer .bottom-footer-row {
   flex-direction: column;
   padding: 1em;
 }
-#servicesTwo .service-container .service-block-list .service-block-second-title {
+#services .service-container .service-block-list .service-block-second-title {
   color: #ffffff;
   text-align: center;
   font-size: 2em;
   font-weight: 600;
 }
-#servicesTwo .service-container .service-block-list ul {
+#services .service-container .service-block-list ul {
   text-align: center;
 }
-#servicesTwo .service-container .service-block-list ul li {
+#services .service-container .service-block-list ul li {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
   font-size: 1.1em;
 }
-#servicesTwo #service-block-production {
+#services .service-container #service-block-production {
   background-image: url(6f5f3ce7928e512caa2d.png);
   min-height: 100%;
 }
-#servicesTwo #service-block-post {
+#services .service-container #service-block-post {
   background-image: url(1f3c74d572e15af2d2c7.png);
   min-height: 100%;
 }
-#servicesTwo #service-block-broadcasting {
+#services .service-container #service-block-broadcasting {
   background-image: url(63f991e69f861aa49662.png);
   min-height: 100%;
 }
-#servicesTwo #service-block-studio {
+#services .service-container #service-block-studio {
   background-image: url(5ce6f3a5ebe2a4d59125.png);
   min-height: 100%;
 }
