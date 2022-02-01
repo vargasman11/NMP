@@ -22,7 +22,7 @@ module.exports = {
             // server: { baseDir: ['public'] }
             proxy: 'http://localhost'
         }),
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({}),
     ],
     module: {
         rules: [

@@ -8,13 +8,15 @@
         background-size: cover;
         .hover-img{
             opacity: 0;
-            transition: opacity ease-in-out 2s;       
+            //transition: opacity ease-in-out 2s;
+            transition: ease-out all 3s 1s;
         }
     }
 
     .img-hover-box:hover{
         .hover-img{
             opacity: 1;
+            animation: fadeOutMural 2s ease-in-out 2s;
         }
     }
 
@@ -31,6 +33,11 @@
     #hover-box-4{
         background-image: url('./../images/hover-pics/hover-4.jpg');
     }    
+}
+
+@keyframes fadeOutMural {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 

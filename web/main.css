@@ -1344,6 +1344,15 @@ footer .bottom-footer-row {
 }
 #boxCTA .services-3-col .service-col-content:hover .hover-content-box {
   display: flex;
+  animation: fadeOutServices ease-out 1.5s;
+}
+@keyframes fadeOutServices {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media (max-width: 720px) {
   #boxCTA .second-boxCTA-row {
@@ -1368,10 +1377,11 @@ footer .bottom-footer-row {
 }
 #hover-pics .img-hover-box .hover-img {
   opacity: 0;
-  transition: opacity ease-in-out 2s;
+  transition: ease-out all 3s 1s;
 }
 #hover-pics .img-hover-box:hover .hover-img {
   opacity: 1;
+  animation: fadeOutMural 2s ease-in-out 2s;
 }
 #hover-pics #hover-box-1 {
   background-image: url(375a53f390e9326df369.jpg);
@@ -1386,6 +1396,14 @@ footer .bottom-footer-row {
   background-image: url(262f68e725e8f24a50d5.jpg);
 }
 
+@keyframes fadeOutMural {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 768px) {
   #hover-pics .img-hover-box {
     height: 100px;

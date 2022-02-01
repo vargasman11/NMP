@@ -136,6 +136,7 @@
 
         }
 
+
         // Hover styles
         .service-col-content:hover {
             cursor: pointer;
@@ -146,6 +147,7 @@
 
             .hover-content-box {
                 display: flex;
+                animation:  fadeOutServices ease-out 1.5s;
             }
         }
 
@@ -154,6 +156,12 @@
     .services-3-col:nth-of-type(2) {
         // margin-left: 1%;
     }
+}
+
+
+@keyframes fadeOutServices {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 
