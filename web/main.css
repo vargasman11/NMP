@@ -1365,6 +1365,10 @@ footer .bottom-footer-row {
     margin-top: 4em;
   }
 }
+.topContent {
+  background: radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
+}
+
 #hover-pics {
   margin-top: 3em;
   padding: 0px;

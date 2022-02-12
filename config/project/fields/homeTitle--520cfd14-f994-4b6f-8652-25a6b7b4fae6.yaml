@@ -1,0 +1,19 @@
+columnSuffix: wnjlduwr
+contentColumnType: text
+fieldGroup: a01422a2-f817-474f-93de-9c468fb08e48 # Home Page
+handle: homeTitle
+instructions: 'Title and/or text that goes in the jumbotron'
+name: 'Home Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

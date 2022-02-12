@@ -1,18 +1,33 @@
-dateModified: 1637937552
+dateModified: 1644704213
 email:
   fromEmail: vargasman11@gmail.com
   fromName: nmp
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    1f6e0b27-44b0-4850-8a47-63fef2fe0846: 'Top Content' # Top Content
+    17c2d169-d836-4ecd-a0a6-13e6d350bc95: 'Home Page' # Home Page
+    66cb88c3-bf8e-47a7-b3f9-23f27d484aa4: 'Home Page' # Home Page
+    520cfd14-f994-4b6f-8652-25a6b7b4fae6: 'Home Title' # Home Title
     571f405c-9331-468d-8315-814035448ce0: nmp # nmp
     618f9dcc-db7c-4a59-a4f5-904a035dde44: Common # Common
+    4795b9be-bf70-401f-aa15-9078f485f966: 'Home Sub Title' # Home Sub Title
+    a01422a2-f817-474f-93de-9c468fb08e48: 'Home Page' # Home Page
     af749d3e-842b-44a9-8eab-3a82a5f7e956: nmp # nmp
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  redactor-anchors:
+    edition: standard
+    enabled: true
+    schemaVersion: '2.0'
 system:
   edition: solo
   live: true
   name: nmp
-  schemaVersion: 3.7.8
+  schemaVersion: 3.7.32
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

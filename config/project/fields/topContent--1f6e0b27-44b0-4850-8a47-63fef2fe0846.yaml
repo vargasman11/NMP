@@ -1,0 +1,27 @@
+columnSuffix: aemsbskk
+contentColumnType: text
+fieldGroup: a01422a2-f817-474f-93de-9c468fb08e48 # Home Page
+handle: topContent
+instructions: 'This is where you would add text under the Jumbotron if you would like to add any.'
+name: 'Top Content'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field
