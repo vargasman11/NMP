@@ -1,4 +1,4 @@
-dateModified: 1644704213
+dateModified: 1644731745
 email:
   fromEmail: vargasman11@gmail.com
   fromName: nmp
@@ -6,14 +6,27 @@ email:
 meta:
   __names__:
     1f6e0b27-44b0-4850-8a47-63fef2fe0846: 'Top Content' # Top Content
+    3d78b203-f35f-4d0b-b1b7-1a56dd78b8c6: 'Service Content' # Service Content
+    5c0240cb-90c8-477f-9b86-7ba1f03781fd: 'Home Box CTA' # Home Box CTA
+    7b72aba2-e12b-4132-b4eb-260b1a40116e: user_uploads # user_uploads
+    8a8f6d5f-7942-40ee-9714-c4c36fe15fc8: 'Home Client List' # Home Client List
+    9b3a76f3-b105-4ce0-aca9-277a6f69aac1: Clients # Clients
+    14f42d6b-a51a-4864-be13-69de9ff89927: 'Service Title' # Service Title
     17c2d169-d836-4ecd-a0a6-13e6d350bc95: 'Home Page' # Home Page
     66cb88c3-bf8e-47a7-b3f9-23f27d484aa4: 'Home Page' # Home Page
+    77c36666-dcf3-4100-877b-2ffa2feed87f: 'Service Background Image' # Service Background Image
     520cfd14-f994-4b6f-8652-25a6b7b4fae6: 'Home Title' # Home Title
     571f405c-9331-468d-8315-814035448ce0: nmp # nmp
     618f9dcc-db7c-4a59-a4f5-904a035dde44: Common # Common
+    750b934c-e02b-40e3-b118-509947c3c586: 'Home CTA Text' # Home CTA Text
     4795b9be-bf70-401f-aa15-9078f485f966: 'Home Sub Title' # Home Sub Title
     a01422a2-f817-474f-93de-9c468fb08e48: 'Home Page' # Home Page
     af749d3e-842b-44a9-8eab-3a82a5f7e956: nmp # nmp
+    c8e1aeff-4591-4db2-a014-77919380ed52: 'Home CTA Link Text' # Home CTA Link Text
+    c58c2e59-0099-4463-ab88-6443163ad279: Logo # Logo
+    eb4d5f14-381c-446e-8049-5f4635926952: 'Service Link' # Service Link
+    ee269c32-a9eb-43ad-80cc-e07d616caa49: Client # Client
+    fc4c6e8b-a509-4774-b1b6-3f50578f019f: Service # Service
 plugins:
   redactor:
     edition: standard

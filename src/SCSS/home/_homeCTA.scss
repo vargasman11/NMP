@@ -1,0 +1,47 @@
+#homeCTA {
+  clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
+  background: $cta-gradient;
+  min-height: 200px;
+  padding: 2em 0px;
+
+  .display-4 {
+    color: $red;
+  }
+
+  .lead {
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    background-color: #3b3838;
+    color: $white;
+  }
+
+  .btn:hover {
+    background-color: $red;
+    color: $white;
+  }
+}
+
+@media screen and (min-width:559px) and (max-width:800px) {
+  #tvShowCta {
+    padding: 4em 0px;
+
+    .display-4 {
+      font-size: 3em;
+    }
+  }
+
+}
+
+@media screen and (max-width:558px) {
+  #tvShowCta {
+    clip-path: polygon(100% 0, 100% 87%, 0 100%, 0 13%);
+
+    .lead {
+      font-size: 1.2em;
+    }
+  }
+}

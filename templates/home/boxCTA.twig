@@ -1,50 +1,34 @@
 <div class="container-fluid" id="boxCTA">
+    <div class="container">
+        <div class="row boxCTA-row">
+
+            <!-- PRODUCTION BOX -->
+            {# Create a Matrix block query with the 'owner', 'fieldId', and 'type' parameters #}
+            {% set myMatrixBlockQuery = craft.matrixBlocks().fieldId(5).type('service') %}
+
+            {# Fetch the Matrix blocks #}
+            {% set matrixBlocks = myMatrixBlockQuery.all() %}
+
+            {# Display their contents #}
+            {% for block in matrixBlocks %}
+                {% set images = block.serviceBackgroundImage %}
 
 
-    <div class="row second-boxCTA-row">
-
-        <!-- PRODUCTION BOX -->
-        <div class="services-3-col" id="production-box-service" data-aos="fade-right">
-            <div class="service-col-content">
-                <div class="service-col-content-text">
-                    <h1 class="display-4">Production <br> Services</h1>
-                </div>
-                <div class="hover-content-box">
-                    <p class="box-popup">Next Millennium Productions has the talent, the technology, and the experience
-                        to take your productions to the next level. All are accomplished with the exceptional level of
-                        service our clients demand and you will come to expect.</p>
-                    <a class="btn btn-lg" href="/services">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- STUDIOS BOX -->
-        <div class="services-3-col" id="studios-box-service" data-aos="fade-left">
-            <div class="service-col-content">
-                <div class="service-col-content-text">
-                    <h1 class="display-4">Studios</h1>
-                </div>
-                <div class="hover-content-box">
-                    <!-- <p class="service-content-list">Satellite Media Tours | Webcasts | Interviews
-                        News Hits | Live Shots | Greenscreen | White Cyc</p> -->
-                    {# <p class="box-popup">Next Millennium has your needs in mind. We have five studios that offer #}
-                    {# remarkable versatility. As always we pride ourselves in anticipating your needs. We have two #}
-                    {# locations that offer everything from rooftop city views to an abundance of natural light #}
-                    {# streaming through 9-foot windows in a historic neoclassical building in the heart of the lower #}
-                    {# east side.</p> #}
-
-                    <p class="box-popup">Next Millenium has two locations with a combined five studios offering
-                        everything from rooftop skyline views to an abundance of natural light streaming through 9 foot
-                        windows.</p>
-                    <div class="text-center learn-more-container">
-                        <a class="btn btn-lg" href="/studios">Learn More</a>
+                <div class="services-3-col" data-aos="fade-right"
+                     style="background-image: url({% for img in images %}{{ img.getUrl }}{% endfor %})">
+                    <div class="service-col-content">
+                        <div class="service-col-content-text">
+                            {# <h1 class="display-4">Production <br> Services</h1> #}
+                            <h1 class="display-4">{{ block.serviceTitle }}</h1>
+                        </div>
+                        <div class="hover-content-box">
+                            <p class="box-popup">{{ block.serviceContent }}</p>
+                            <a class="btn btn-lg" href="/services">Learn More</a>
+                        </div>
                     </div>
                 </div>
+            {% endfor %}
 
-            </div>
         </div>
-
-
     </div>
 </div>

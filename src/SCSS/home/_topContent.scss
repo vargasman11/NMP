@@ -1,3 +1,8 @@
-.topContent{
+.topContent {
+  padding: 2em 0px;
   background: $cta-gradient;
+
+  p {
+    margin: 0;
+  }
 }

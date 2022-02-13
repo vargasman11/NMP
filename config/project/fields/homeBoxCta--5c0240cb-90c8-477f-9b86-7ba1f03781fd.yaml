@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: a01422a2-f817-474f-93de-9c468fb08e48 # Home Page
+handle: homeBoxCta
+instructions: ''
+name: 'Home Box CTA'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_homeboxcta}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

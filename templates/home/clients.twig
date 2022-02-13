@@ -1,63 +1,33 @@
-{# <div id="clients-title-top" class="container-fluid">
+<div class="container-fluid " id="clients">
     <div class="row">
         <div class="col-sm-12">
             <p class="display-4 text-center clients-title-text">Clients</p>
         </div>
     </div>
-</div> #}
 
-
-<div class="container-fluid " id="clients">
- <div class="row">
-        <div class="col-sm-12">
-            <p class="display-4 text-center clients-title-text">Clients</p>
-        </div>
-    </div>
-   
     <!-- GLIDE JS -->
     <div class="row owl-carousel-row glider-container">
         <div class="col-sm-12">
             <div class="glide">
                 <div class="glide__arrows" data-glide-el="controls">
                     <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
-                            class="fas fa-chevron-left"></i></button>
+                                class="fas fa-chevron-left"></i></button>
                 </div>
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
-                        <li class="glide__slide"><img src="/images/clients/atnt.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/aol.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/blue.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/crime.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/diy.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/history.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/hp.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/id.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/jpmorgan.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/lifetime.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/nbc.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/nick.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/nyc.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/tlc.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/amp.jpg" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/animal-planet.png" alt="" class="img-fluid">
-                        </li>
-                        <li class="glide__slide"><img src="/images/clients/ate.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/bio.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/discovery.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/HBO.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/Janssen-logo-and-jandj-logo-2.png" alt=""
-                                class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/lwt.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/mlb.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/novartis.png" alt="" class="img-fluid"></li>
-                        <li class="glide__slide"><img src="/images/clients/prNewswire.png" alt="" class="img-fluid">
-                        </li>
-                        <li class="glide__slide"><img src="/images/clients/ubm.png" alt="" class="img-fluid"></li>
+                        {% set myMatrixBlockQuery = craft.matrixBlocks().fieldId(12).type('client') %}
+                        {% set matrixBlocks = myMatrixBlockQuery.all() %}
+                        {% for block in matrixBlocks %}
+                            {% set images = block.logo %}
+                            {% for img in images %}
+                                <li class="glide__slide"><img src="{{ img.getUrl() }}" alt="{{ img.fileName }}" class="img-fluid"></li>
+                            {% endfor %}
+                        {% endfor %}
                     </ul>
                 </div>
                 <div class="glide__arrows" data-glide-el="controls">
                     <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
-                            class="fas fa-chevron-right"></i></button>
+                                class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>

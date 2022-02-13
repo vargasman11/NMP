@@ -1,41 +1,3 @@
-{# <div class="container-fluid" id="feed">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="text-center py-4">
-                <a href="https://www.instagram.com/nmpfilms/" class="mx-auto display-4 text-center feed-title m-0"
-                    target="_blank">Follow Us on Instagram</a>
-            </div>
-            <div class="glide feed-glide">
-                <div class="glide__track" data-glide-el="track">
-                    <ul class="glide__slides"> 
-
-                        {% set media = craft.instagram.getMedia() %}
-                        {% for item in media %}
-                        {% set permalink = item.permalink %}
-                        {% set caption = item.caption is defined ? item.caption : 'Instgram Picture' %}
-                        <li class="glide__slide">
-                            {% if item.media_type == 'VIDEO'%}
-                            <a href="{{permalink}}" target="_blank"><img src="{{item.thumbnail_url}}"
-                                    alt="{{caption}}"></a>
-                            {% else %}
-                            <a href="{{permalink}}" target="_blank"><img src="{{item.media_url}}" alt="{{caption}}"></a>
-                            {% endif %}
-                        </li>
-                        {% endfor %}
-
-                    </ul>
-                    <div class="glide__arrows text-center py-3" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left btn" data-glide-dir="<">&larr;</button>
-                        <button class="glide__arrow glide__arrow--right btn" data-glide-dir=">">&rarr;</button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div> #}
-
-
 
 <div class="container-fluid" id="feed">
     <div class="row">
@@ -46,8 +8,6 @@
             </div>
             <script src="https://apps.elfsight.com/p/platform.js" defer></script>
             <div class="elfsight-app-c8f2a834-daeb-49e5-80fe-6f861474d3e6"></div> 
-            
-{# <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/417d9a88d272585fa9d3fc85db359683.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe> #}
 
         </div>
     </div>

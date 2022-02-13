@@ -3,59 +3,22 @@
     h1{
         font-weight: 500 !important;
     }
-    // TOP TEXT BLOCK
-    #services {
-        background: $cta-gradient;
-      
-        .col-sm-12 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            h1 {
-                color: $red;
-                font-size: 3.5em;
-                text-align: center;
-                font-weight: 300;
-            }
-
-            p {
-                font-size: 1.4em;
-                text-emphasis: center;
-                width: 70%;
-                margin: 0 auto;
-                text-align: center;
-                font-weight: 300;
-            }
-        }
-    }
 
     p {  
         color: #3b3838;
     }
 
     // Row where boxes are next to each other
-    .second-boxCTA-row {
+    .boxCTA-row {
         padding: 6em 0px 4em;
         justify-content: center;
     }
 
     // BOXES LEFT RIGHT AND HOVER STYLES
-
     .box-popup {
         display: block;
         padding: 1em;
         margin-bottom: 0;
-    }
-
-    #production-box-service {
-        background-image: url('./../images/heros/hero-img-2.jpg');
-    }
-
-    #studios-box-service {
-        background-image: url('./../images/services/services-broadcasting.png');
-        position: relative;
     }
 
     // BOX CLASSES IN GENERAL
