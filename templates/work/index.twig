@@ -43,17 +43,29 @@
 
             </div>
         </div>
-        {% include('work/videos') %}
-        <div class="row" id="originalContent">
-            <div class="col-sm-12 py-5">
-                <p class="display-4 text-center">Fresh Work</p>
+
+
+        <div id="originalContentContainer">
+            <div class="container py-5">
+                <div class="row">
+                    {# Create a Matrix block query with the 'owner', 'fieldId', and 'type' parameters #}
+                    {% set myMatrixBlockQuery = craft.matrixBlocks().fieldId(17).type('workVideo') %}
+
+                    {# Fetch the Matrix blocks #}
+                    {% set matrixBlocks = myMatrixBlockQuery.all() %}
+
+                    {# Display their contents #}
+                    {% for block in matrixBlocks %}
+                        <div class="col-12 col-md-4 p-2">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                {{ block.videoLink|raw }}
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
             </div>
         </div>
-        <div class="row">
-            {% include('work/fresh-work') %}
-        </div>
-
     </div>
-
 
 {% endblock %}

@@ -1,5 +1,3 @@
-@import'videos';
-@import'original-content';
 
 #work {
     .work-header {
@@ -35,40 +33,6 @@
                 }
             }
         }
-    }
-
-    // ORIGINAL CONTENT
-    #originalContent {
-        margin-top: -3.5em;
-        clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
-        // background: #FFFFFF;
-        // background: -webkit-radial-gradient(center, #FFFFFF, #EDEAE6);
-        // background: -moz-radial-gradient(center, #FFFFFF, #EDEAE6);
-        // background: radial-gradient(ellipse at center, #FFFFFF, #EDEAE6);
-        background: $cta-gradient;
-        min-height: 200px;
-        padding: 2em 0px;
-
-        .display-4 {
-            // color: $gold;
-            color: $red;
-            font-weight: 500;
-            // color: #3b3838;
-        }
-
-        .lead {
-            font-size: 1.4em;
-            font-weight: normal;
-            margin-bottom: 0;
-        }
-
-        .btn {
-            background-color: $red !important;
-        }
-    }
-
-    .show-mobile-only {
-        display: none;
     }
 }
 

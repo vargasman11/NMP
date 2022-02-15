@@ -1,0 +1,33 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 54edfdbc-adee-4bbd-b8de-41f3d806d858 # Studios
+handle: studioEntryFloorplan
+instructions: 'Floorplan image of studio'
+name: 'Studio Entry Floorplan'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds: null
+  defaultUploadLocationSource: 'volume:e8155094-6cf2-45af-9c4f-f21d1acf3bf0' # Studios Images
+  defaultUploadLocationSubpath: ''
+  limit: ''
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: ''
+  selectionLabel: ''
+  showSiteMenu: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:7b72aba2-e12b-4132-b4eb-260b1a40116e' # user_uploads
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:e8155094-6cf2-45af-9c4f-f21d1acf3bf0' # Studios Images
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

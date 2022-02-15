@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: studios
+name: Studios
+propagationMethod: all
+siteSettings:
+  af749d3e-842b-44a9-8eab-3a82a5f7e956: # nmp
+    enabledByDefault: true
+    hasUrls: true
+    template: studios/_entry
+    uriFormat: 'studios/{slug}'
+type: channel

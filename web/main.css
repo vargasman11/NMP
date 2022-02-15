@@ -385,6 +385,14 @@ footer .bottom-footer-row {
 .studio-page .studio-details {
   padding: 3em;
 }
+.studio-page .studio-details ul {
+  list-style: none;
+}
+.studio-page .studio-details ul li {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
 .studio-page .four-images {
   margin-top: 2em;
   text-align: center;
@@ -443,6 +451,12 @@ footer .bottom-footer-row {
   background-color: #ffffff;
   background: linear-gradient(180deg, white 0%, #edeae6 100%);
   padding: 3em;
+}
+.studio-page .studio-extras .studioEntryDetails ul li {
+  padding: 0.5rem 1rem;
+  list-style: none !important;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 .studio-page .set-gallery-row {
   background: #edeae6;
@@ -957,58 +971,6 @@ footer .bottom-footer-row {
     font-size: 2.4em;
   }
 }
-.video-row {
-  padding: 2em 3em 3em;
-}
-.video-row .vid-display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 2em 0;
-}
-.video-row .vid-display .vidbox {
-  width: 32%;
-  margin: 5px;
-  overflow: hidden;
-}
-.video-row .vid-display .vidbox h4 {
-  color: #ffffff;
-  text-align: center;
-  padding: 0.5em 0px;
-}
-@media (max-width: 768px) {
-  .video-row .vid-display {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2em 0;
-  }
-  .video-row .vid-display .vidbox {
-    width: 300px;
-  }
-}
-#originalContentContainer {
-  padding: 0 3em;
-}
-#originalContentContainer .contentDisplay {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-#originalContentContainer .contentDisplay .contentBox {
-  margin: 5px;
-  transition: all 0.3s ease-in-out;
-}
-#originalContentContainer .contentDisplay .contentBox:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  #originalContentContainer .contentDisplay .contentBox {
-    width: 45%;
-  }
-}
 #work .work-header {
   background-image: url(262f68e725e8f24a50d5.jpg);
   background-position: center;
@@ -1032,28 +994,6 @@ footer .bottom-footer-row {
 #work .work-header .work-page-header-content ul li {
   font-size: 1.2em;
   color: #ffffff;
-}
-#work #originalContent {
-  margin-top: -3.5em;
-  clip-path: polygon(100% 0, 100% 75%, 0 100%, 0 25%);
-  background: radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
-  min-height: 200px;
-  padding: 2em 0px;
-}
-#work #originalContent .display-4 {
-  color: #cf0015;
-  font-weight: 500;
-}
-#work #originalContent .lead {
-  font-size: 1.4em;
-  font-weight: normal;
-  margin-bottom: 0;
-}
-#work #originalContent .btn {
-  background-color: #cf0015 !important;
-}
-#work .show-mobile-only {
-  display: none;
 }
 
 @media (max-width: 768px) {

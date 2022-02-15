@@ -1,18 +1,26 @@
 {% extends '_wrapper.twig' %}
 {% block main %}
 
-<div class="container-fluid p-0" id="about-header">
-    <div class="header-title-div">
-        <div class="shadow" data-aos="fade-right">
-            <p class="display-4">Next Millennium <br> Productions Cast</p>
+    <div class="container-fluid p-0" id="about-header">
+        <div class="header-title-div">
+            <div class="shadow" data-aos="fade-right">
+                <div>{{ entry.aboutTitle }}</div>
+            </div>
         </div>
     </div>
+    <div class="container-fluid pt-5" id="about-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center lead">
+                    {{ entry.aboutContent }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="about">
+        {%- include('about/profiles') %}
+        {%- include('about/sustainability') %}
 
-</div>
-<div class="container-fluid" id="about">
-    {%- include('about/profiles') %}
-    {%- include('about/sustainability') %}
-
-</div>
+    </div>
 
 {% endblock %}

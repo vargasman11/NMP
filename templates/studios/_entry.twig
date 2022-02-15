@@ -1,0 +1,144 @@
+{% extends '_wrapper.twig' %}
+{% block main %}
+<div class="studio-page">
+    <div class="container-fluid " id="studio-page-a">
+        <!-- header section -->
+        <div class="row studio-page-header">
+            <!-- <div class="col-sm-12 p-0"> -->
+            <div class="p-0">
+                <div class="studio-page-header-content">
+                    <div class="container p-0">
+                        <div class="col-10 col-md-6 offset-md-2 shadow">
+                            <p class="display-4 m-0 text-white">Studio{{ entry.title }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Studio Entry --->
+    <div class="row studio-blurb">
+        <div class="col-sm-12 col-md-8 mx-auto py-5">
+            {{ entry.studioEntryContent }}
+        </div>
+    </div>
+
+    <!-- Studio Details -->
+    <div class="row studio-details">
+        <div class="col-sm-12 col-md-8 col-lg-7 p-0">
+            {% set image = entry.studioEntryFloorplan %}
+            {% for img in image %}
+                <img class="img-fluid" src="{{ img.getUrl() }}" alt="{{ img.fileName }}">
+            {% endfor %}
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-3 offset-lg-1 p-0">
+            {{ entry.studioEntryDetails }}
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="row studio-cta">
+        <div class="col-sm-12 py-5">
+            <p class="display-4 text-center">Like this studio?</p>
+            <div class="stuido-cta-container text-center">
+                <a href="#" class="btn btn-lg">Book Now!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Studio Extras -->
+    <div class="row studio-extras py-5 bg-light">
+        <!-- <div class="container">
+            <div class="row"> -->
+        <div class="col-sm-12 col-md-4 p-0">
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h5 class="card-title">Booking Info</h5>
+                    <p class="card-text">We typically reserve this room for a minimum 50 hours. We typically
+                        reserve 1 month in advance</p>
+                    <p class="card-text">Additonally we can also provide:</p>
+                </div>
+                <div class="studioEntryDetails"> {{ entry.studioEntryDetails }}</div>
+                <div class="card-body">
+                    <p><strong>Studio Manager :</strong> Colin</p>
+                    <p><strong>Direct Studio :</strong>212-232-2323</p>
+                    <p><strong>Email :</strong> studio-a@nmp.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 offset-md-1 p-0">
+            <figure>
+                <blockquote class="blockquote">
+                    <p>{{ entry.studioEntryQuote }}</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    <cite title="Source Title">{{ entry.studioEntryQuoteAuthor }}</cite>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <!-- Studio Gallery Images -->
+    <div class="row" id="gallery-imgs-row" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-sm-12" id="gallery-imgs">
+
+            {% set myMatrixBlockQuery = craft.matrixBlocks().fieldId(30).type('gallery') %}
+            {% set matrixBlocks = myMatrixBlockQuery.all() %}
+            {% for block in matrixBlocks %}
+            {% set pics = block.galleryImage %}
+            {% for pic in pics %}
+            <a class="set-gallery-img-link" href="{{ pic.getUrl() }}"
+               data-lightbox="image-1" data-title="My caption">
+                <img src="{{ pic.getUrl() }}" alt="" class="img-fluid">
+                {% endfor %}
+            </a>
+            {% endfor %}
+
+            <a class="set-gallery-img-link" href="/images/studios/studio-a/set-gallery/studio-a-gallery-1.jpg"
+               data-lightbox="image-1" data-title="My caption">
+                <img src="/images/studios/studio-a/set-gallery/studio-a-gallery-1.jpg" alt="" class="img-fluid">
+            </a>
+        </div>
+    </div>
+
+    <div class="row studio-page__cirles-row">
+        <div class="col-sm-12">
+            <p class="display-4 text-center py-5">See our other studios</p>
+        </div>
+        <div class="studio__circle">
+            <div class="studio_circle-bg" id="studio__cicle-a"></div>
+            <a href="#studio-a">
+                <p>Studio A</p>
+            </a>
+        </div>
+        <div class="studio__circle">
+            <div class="studio_circle-bg" id="studio__cicle-b"></div>
+            <a href="#studio-b">
+                <p>Studio B</p>
+            </a>
+        </div>
+        <div class="studio__circle">
+            <div class="studio_circle-bg" id="studio__cicle-rooftoop"></div>
+            <a href="#studio-rooftop">
+                <p>Rooftop</p>
+            </a>
+        </div>
+        <div class="studio__circle">
+            <div class="studio_circle-bg" id="studio__cicle-d"></div>
+            <a href="#studio-d">
+                <p>Studio D</p>
+            </a>
+        </div>
+        <div class="studio__circle">
+            <div class="studio_circle-bg" id="studio__cicle-e"></div>
+            <a href="#studio-e">
+                <p>Studio E</p>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

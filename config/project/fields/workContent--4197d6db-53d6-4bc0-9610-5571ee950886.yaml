@@ -1,0 +1,27 @@
+columnSuffix: zhyujqus
+contentColumnType: text
+fieldGroup: b59c4a0d-0708-4852-bf98-29975137dc6f # Work
+handle: workContent
+instructions: 'Content Box to go below the jumbo header and above the video links'
+name: 'Work Content '
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

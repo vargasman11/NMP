@@ -1,32 +1,66 @@
-dateModified: 1644731745
+dateModified: 1644896363
 email:
   fromEmail: vargasman11@gmail.com
   fromName: nmp
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0beca905-2d69-4b31-871c-d77d04314402: 'Studio Content' # Studio Content
+    0efaa7ce-1b73-4703-ba2a-d0e1e0eb7648: About # About
     1f6e0b27-44b0-4850-8a47-63fef2fe0846: 'Top Content' # Top Content
+    1f7959f0-5eef-400a-ac5b-c742f3dc9f7a: 'Work Video' # Work Video
+    2a996100-e37c-49e5-9823-805b5fcb8014: 'Our Work Page' # Our Work Page
+    3cae4f3c-fe52-400f-a0bd-1fa2100108ae: 'Studio Index CTA' # Studio Index CTA
     3d78b203-f35f-4d0b-b1b7-1a56dd78b8c6: 'Service Content' # Service Content
+    3eae5d3d-7c5f-4d45-89c4-38c1f4dbd23d: 'Studio Entry Quote' # Studio Entry Quote
     5c0240cb-90c8-477f-9b86-7ba1f03781fd: 'Home Box CTA' # Home Box CTA
     7b72aba2-e12b-4132-b4eb-260b1a40116e: user_uploads # user_uploads
     8a8f6d5f-7942-40ee-9714-c4c36fe15fc8: 'Home Client List' # Home Client List
+    8c419f6e-b330-474e-b61b-753dbbe63324: 'About Page' # About Page
     9b3a76f3-b105-4ce0-aca9-277a6f69aac1: Clients # Clients
+    9ea88031-3b47-4ba1-a469-8414b49d074f: Default # Default
     14f42d6b-a51a-4864-be13-69de9ff89927: 'Service Title' # Service Title
     17c2d169-d836-4ecd-a0a6-13e6d350bc95: 'Home Page' # Home Page
+    19d7a1c4-3142-40e9-bc2e-2c5f3f7a9767: 'Studio Entry Details' # Studio Entry Details
+    31cccd38-af3f-4048-88b3-c0a4d0b124ea: 'Video Link' # Video Link
+    54edfdbc-adee-4bbd-b8de-41f3d806d858: Studios # Studios
+    66bd3804-6ad6-4a39-88d2-150d91ec7518: 'Our Work Page' # Our Work Page
     66cb88c3-bf8e-47a7-b3f9-23f27d484aa4: 'Home Page' # Home Page
+    75dd68d8-2cc2-4275-90bd-2fbd8db3f2cc: Studios # Studios
     77c36666-dcf3-4100-877b-2ffa2feed87f: 'Service Background Image' # Service Background Image
     520cfd14-f994-4b6f-8652-25a6b7b4fae6: 'Home Title' # Home Title
     571f405c-9331-468d-8315-814035448ce0: nmp # nmp
     618f9dcc-db7c-4a59-a4f5-904a035dde44: Common # Common
     750b934c-e02b-40e3-b118-509947c3c586: 'Home CTA Text' # Home CTA Text
+    900dfd49-c96e-49d8-b1fc-664e1868663e: Gallery # Gallery
+    4197d6db-53d6-4bc0-9610-5571ee950886: 'Work Content ' # Work Content 
     4795b9be-bf70-401f-aa15-9078f485f966: 'Home Sub Title' # Home Sub Title
+    6967b4c7-2778-4944-9ccc-07ea690ed289: 'Studio Index Page' # Studio Index Page
+    3583603f-9b08-4e32-a9fc-eab4950d0b01: 'Work Title' # Work Title
+    6062591b-794b-4999-bb3c-dbc588210866: 'Work Video Embed' # Work Video Embed
+    41837668-480b-441a-a73f-6eec94086c50: 'Studio Entry Gallery' # Studio Entry Gallery
+    45558769-ed6a-4115-b464-b62fe3b3bafa: 'Studio Gallery Images ' # Studio Gallery Images 
     a01422a2-f817-474f-93de-9c468fb08e48: 'Home Page' # Home Page
+    a80a84a5-ab20-4385-a7a2-e3ade1d5c574: 'About Title' # About Title
+    ab0e245b-79b3-4607-8792-fb040c66c54b: 'Studio Index Title' # Studio Index Title
     af749d3e-842b-44a9-8eab-3a82a5f7e956: nmp # nmp
+    b011e22b-4f23-4d49-9397-505b9773447c: 'Studio Entry Floorplan' # Studio Entry Floorplan
+    b2aad518-6e3e-434c-a681-5001314a6b51: 'Work Sub Title' # Work Sub Title
+    b59c4a0d-0708-4852-bf98-29975137dc6f: Work # Work
+    b32504b1-53b0-4840-a6e5-8c3468aa87d0: 'Studio Index Page' # Studio Index Page
+    bad3baac-8d7f-4656-bc9c-123899e34d4e: 'About Content' # About Content
+    bc0c07e7-40a0-43fc-ad0c-1f458ebe5650: 'Studio Index CTA Button Index' # Studio Index CTA Button Index
+    be61f8a0-be01-4162-905e-697f90ea3881: 'Studio Entry Quote Author' # Studio Entry Quote Author
+    c6bd3ec4-a657-42ad-b22b-186f545f36eb: 'About Page' # About Page
     c8e1aeff-4591-4db2-a014-77919380ed52: 'Home CTA Link Text' # Home CTA Link Text
     c58c2e59-0099-4463-ab88-6443163ad279: Logo # Logo
+    dc93bfb6-5fb5-4e58-8343-623d2409716c: 'Studio Entry Content' # Studio Entry Content
+    e8155094-6cf2-45af-9c4f-f21d1acf3bf0: 'Studios Images' # Studios Images
     eb4d5f14-381c-446e-8049-5f4635926952: 'Service Link' # Service Link
     ee269c32-a9eb-43ad-80cc-e07d616caa49: Client # Client
     fc4c6e8b-a509-4774-b1b6-3f50578f019f: Service # Service
+    fe002d08-9e95-455e-820b-6f7c12d19b5d: 'Studio Index Page' # Studio Index Page
+    fe1a467b-577a-4a78-b441-a5ff6f1a53dd: 'Gallery Image' # Gallery Image
 plugins:
   redactor:
     edition: standard

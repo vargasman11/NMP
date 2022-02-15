@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 54edfdbc-adee-4bbd-b8de-41f3d806d858 # Studios
+handle: studioEntryGallery
+instructions: ''
+name: 'Studio Entry Gallery'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_studioentrygallery}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

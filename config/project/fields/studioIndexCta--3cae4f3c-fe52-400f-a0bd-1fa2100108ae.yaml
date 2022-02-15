@@ -1,0 +1,19 @@
+columnSuffix: dlebsvlw
+contentColumnType: text
+fieldGroup: 6967b4c7-2778-4944-9ccc-07ea690ed289 # Studio Index Page
+handle: studioIndexCta
+instructions: 'This is the call to action at the very bottom of the page'
+name: 'Studio Index CTA'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

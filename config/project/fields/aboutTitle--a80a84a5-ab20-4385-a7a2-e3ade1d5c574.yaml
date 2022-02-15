@@ -1,0 +1,27 @@
+columnSuffix: dwaqwztm
+contentColumnType: text
+fieldGroup: 0efaa7ce-1b73-4703-ba2a-d0e1e0eb7648 # About
+handle: aboutTitle
+instructions: 'Title of the page that goes in the jumbotron'
+name: 'About Title'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

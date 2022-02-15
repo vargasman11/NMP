@@ -1,0 +1,27 @@
+columnSuffix: ygwkgvzg
+contentColumnType: text
+fieldGroup: 54edfdbc-adee-4bbd-b8de-41f3d806d858 # Studios
+handle: studioEntryDetails
+instructions: 'This is where you insert your studio entry details. Please format them in a list in this editor. The option is available on the top of this box.'
+name: 'Studio Entry Details'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

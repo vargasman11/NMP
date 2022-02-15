@@ -1,0 +1,19 @@
+columnSuffix: geyemwsy
+contentColumnType: text
+fieldGroup: 6967b4c7-2778-4944-9ccc-07ea690ed289 # Studio Index Page
+handle: studioIndexCtaButtonIndex
+instructions: 'this is the text that the button will say.'
+name: 'Studio Index CTA Button Index'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

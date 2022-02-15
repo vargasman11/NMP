@@ -1,0 +1,41 @@
+field: 6062591b-794b-4999-bb3c-dbc588210866 # Work Video Embed
+fieldLayouts:
+  d753b11b-9c79-4946-9f9f-93345f8d66a7:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 31cccd38-af3f-4048-88b3-c0a4d0b124ea # Video Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  31cccd38-af3f-4048-88b3-c0a4d0b124ea: # Video Link
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: videoLink
+    instructions: 'Please paste the embed video code that you would like to share here. If using Vimeo please share using the "responsive" width option.'
+    name: 'Video Link'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: workVideo
+name: 'Work Video'
+sortOrder: 1

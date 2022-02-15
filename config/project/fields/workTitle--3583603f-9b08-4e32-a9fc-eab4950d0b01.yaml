@@ -1,0 +1,19 @@
+columnSuffix: vlynzxsx
+contentColumnType: text
+fieldGroup: b59c4a0d-0708-4852-bf98-29975137dc6f # Work
+handle: workTitle
+instructions: 'Title text of the page in the jumbotron'
+name: 'Work Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

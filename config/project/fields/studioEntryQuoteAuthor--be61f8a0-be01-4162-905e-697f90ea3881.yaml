@@ -1,0 +1,19 @@
+columnSuffix: izebxmuz
+contentColumnType: text
+fieldGroup: 54edfdbc-adee-4bbd-b8de-41f3d806d858 # Studios
+handle: studioEntryQuoteAuthor
+instructions: ''
+name: 'Studio Entry Quote Author'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

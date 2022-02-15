@@ -1,5 +1,22 @@
 {% extends '_wrapper.twig' %}
 {% block main %}
-{% include('studios/studioList') %}
-{% include('studios/studioCTA') %}
-{%  endblock %}
+    {% include('studios/studioList') %}
+
+
+    <div class="container-fluid" id="studioCTA">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="display-4 text-center aos-init aos-animate">{{ entry.studioIndexCta }}</p>
+                        <div class="text-center">
+                            <a href="mailto:info@nmpfilms.com?subject=Studio Rent Inquiry"
+                               class="btn btn-lg">{{ entry.studioIndexCtaButtonIndex }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

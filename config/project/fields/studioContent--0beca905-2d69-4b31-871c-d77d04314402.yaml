@@ -1,0 +1,27 @@
+columnSuffix: mqukmhbo
+contentColumnType: text
+fieldGroup: 6967b4c7-2778-4944-9ccc-07ea690ed289 # Studio Index Page
+handle: studioContent
+instructions: 'This is the content that will go under the 5 block pictures'
+name: 'Studio Content'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

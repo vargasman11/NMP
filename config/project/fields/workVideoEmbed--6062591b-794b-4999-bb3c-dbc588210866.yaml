@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b59c4a0d-0708-4852-bf98-29975137dc6f # Work
+handle: workVideoEmbed
+instructions: 'Please paste the embed video code that you would like to share here. If using Vimeo please share using the "responsive" width option.'
+name: 'Work Video Embed'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_workvideoembed}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
