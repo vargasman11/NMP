@@ -452,6 +452,9 @@ footer .bottom-footer-row {
   background: linear-gradient(180deg, white 0%, #edeae6 100%);
   padding: 3em;
 }
+.studio-page .studio-extras .studioEntryDetails ul {
+  padding: 0;
+}
 .studio-page .studio-extras .studioEntryDetails ul li {
   padding: 0.5rem 1rem;
   list-style: none !important;
