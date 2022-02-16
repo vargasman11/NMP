@@ -97,252 +97,38 @@
 
         <!-- STUDIO DETAILS -->
         <div class="row studios-row">
-            <!-- Studio A -->
-            <div class="container-fluid studio-container" id="studio-a">
-                <div class="row p-0">
-                    <div class="col-sm-12">
-                        <h1 class="display-4">Studio A Summary</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-5 card-col border-red">
-                        <div class="card-col-content ">
-                            <p class="h3 text-center text-red">Specs</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"> 20′ x 30′ sound stage</li>
-                                <li class="list-group-item">18′ ceiling (14′ to grid)</li>
-                                <li class="list-group-item">2-wall cyclorama</li>
-                                <li class="list-group-item">Elevated control room</li>
-                                <li class="list-group-item">200 Amps of distributed power</li>
-                                <li class="list-group-item">Green room</li>
-                                <li class="list-group-item">Hair and makeup room</li>
-                                <li class="list-group-item">Kitchen/dining room</li>
-                            </ul>
-                        </div>
-                        <div class="text-center" style="width: 75%; margin: 2em auto;">
-                            <a href="/studios/studio" class="btn btn-lg"> More Info</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-7 studio-img-col">
-                        <img src="/images/studios/Studio-A.png" class="img-fluid" alt="" data-aos="zoom-in-left">
-{#                        <div class="four-images">#}
-{#                            <h1 class="text-center">Our Space</h1>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-1.jpg"#}
-{#                               data-lightbox="studio-a-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-1.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-2.jpg"#}
-{#                               data-lightbox="studio-a-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-2.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-3.jpg"#}
-{#                               data-lightbox="studio-a-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-3.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/studio-4.jpg"#}
-{#                               data-lightbox="studio-a-images" data-title="My caption"> <img#}
-{#                                        src="/images/studios/studio-a/set-photos/studio-4.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                        </div>#}
-                    </div>
-                </div>
-            </div>
+            {# Create an entry query and set some parameters on it #}
+            {% set entryQuery = craft.entries().section('studios').order('dateCreated ASC').all() %}
+            {# Execute the query and get the results #}
+            {% set entries = entryQuery %}
+            {% for entry in entries %}
 
-            <!-- Studio B -->
-            <div class="container-fluid studio-container bg-light" id="studio-b">
-                <div class="row py-2">
-                    <div class="col-sm-12">
-                        <h1 class="display-4">Studio B Summary</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-7 studio-img-col">
-                        <img src="/images/studios/Studio-B.png" class="img-fluid" alt="" data-aos="zoom-in-right">
-{#                        <div class="four-images">#}
-{#                            <h1 class="text-center">Our Space</h1>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-1.jpg"#}
-{#                               data-lightbox="studio-b-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-1.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-2.jpg"#}
-{#                               data-lightbox="studio-b-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-2.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-3.jpg"#}
-{#                               data-lightbox="studio-b-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-3.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/studio-4.jpg"#}
-{#                               data-lightbox="studio-b-images" data-title="My caption"> <img#}
-{#                                        src="/images/studios/studio-a/set-photos/studio-4.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                        </div>#}
-                    </div>
-                    <div class="col-sm-12 col-lg-5 card-col">
-                        <div class="card-col-content card-col-content-right ">
-                            <p class="h3 text-center text-red">Specs</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">8' x 15' Insert Studio</li>
-                                <li class="list-group-item">Sound proof & climate controlled</li>
-                                <li class="list-group-item">Control room</li>
-                                <li class="list-group-item">Satellite uplink</li>
-                                <li class="list-group-item">Client lounge</li>
-                                <li class="list-group-item">Makeup station</li>
-                            </ul>
+                <div class="container-fluid studio-container" id="studio-{{ entry.title }}" {% if loop.index % 2 == 0 %}style="background-color: #ffffff;" {% endif %}>
+                    <div class="row p-0">
+                        <div class="col-sm-12">
+                            <h1 class="display-4">{{ entry.title }}</h1>
                         </div>
-                        <div class="text-center" style="width: 75%; margin: 2em auto;">
-                            <a href="/studios/studio-b" class="btn btn-lg "> More Info</a>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-5 card-col border-red">
+                            <div class="card-col-content ">
+                                {{ entry.studioEntryDetails }}
+                            </div>
+                            <div class="text-center" style="width: 75%; margin: 2em auto;">
+                                <a href="{{ entry.getUrl }}" class="btn btn-lg"> More Info</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-7 studio-img-col">
+                            {% set images = entry.studioEntryFloorplan %}
+                            {% for img in images %}
+                                <img src="{{ img.getUrl }}" class="img-fluid" alt="" data-aos="zoom-in-left">
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Rooftop Studio -->
-            <div class="container-fluid studio-container" id="studio-rooftop">
-                <div class="row py-2">
-                    <div class="col-sm-12">
-                        <h1 class="display-4"> Rooftop Studio Summary</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-5 card-col">
-                        <div class="card-col-content ">
-                            <p class="h3 text-center text-red">Specs</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">25' x 50' deck</li>
-                                <li class="list-group-item">Soho views</li>
-                                <li class="list-group-item">Elevator Access</li>
-                                <li class="list-group-item">Control Room tie in</li>
-                                <li class="list-group-item">Satellite uplink/li>
-                                <li class="list-group-item">Tenting options</li>
-                            </ul>
-                        </div>
-                        <div class="text-center" style="width: 75%; margin: 2em auto;">
-                            <a href="/studios/rooftop" class="btn btn-lg "> More Info</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-7 studio-img-col">
-                        <img src="/images/studios/Rooftop-studio.jpg" class="img-fluid" alt="" data-aos="zoom-in-left">
-{#                        <div class="four-images">#}
-{#                            <h1 class="text-center">Our Space</h1>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-1.jpg"#}
-{#                               data-lightbox="rooftop-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-1.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-2.jpg"#}
-{#                               data-lightbox="rooftop-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-2.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-3.jpg"#}
-{#                               data-lightbox="rooftop-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-3.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/studio-4.jpg"#}
-{#                               data-lightbox="rooftop-images" data-title="My caption"> <img#}
-{#                                        src="/images/studios/studio-a/set-photos/studio-4.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                        </div>#}
-                    </div>
-                </div>
-            </div>
-
-            <!-- Studio D -->
-            <div class="container-fluid studio-container bg-light" id="studio-d">
-                <div class="row py-2">
-                    <div class="col-sm-12">
-                        <h1 class="display-4">Eastside Stages Studio 1 Summary</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-7 studio-img-col">
-                        <img src="/images/studios/Studio-A.png" class="img-fluid" alt="" data-aos="zoom-in-right">
-{#                        <div class="four-images">#}
-{#                            <h1 class="text-center">Our Space</h1>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-1.jpg"#}
-{#                               data-lightbox="studio-d-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-1.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-2.jpg"#}
-{#                               data-lightbox="studio-d-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-2.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-3.jpg"#}
-{#                               data-lightbox="studio-d-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-3.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/studio-4.jpg"#}
-{#                               data-lightbox="studio-d-images" data-title="My caption"> <img#}
-{#                                        src="/images/studios/studio-a/set-photos/studio-4.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                        </div>#}
-                    </div>
-                    <div class="col-sm-12 col-lg-5 card-col">
-                        <div class="card-col-content card-col-content-right ">
-                            <p class="h3 text-center text-red">Specs</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">30’ x 40’ Ground Floor</li>
-                                <li class="list-group-item">30’ x 50’ Mezzanine Level</li>
-                                <li class="list-group-item">30’ Ceiling</li>
-                                <li class="list-group-item">Motorized Grid</li>
-                                <li class="list-group-item">200A 3 Phase Power</li>
-                            </ul>
-                        </div>
-                        <div class="text-center" style="width: 75%; margin: 2em auto;">
-                            <a href="/studios/studio-d" class="btn btn-lg ">More Info</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Studio E -->
-            <div class="container-fluid studio-container" id="studio-e">
-                <div class="row py-2">
-                    <div class="col-sm-12">
-                        <h1 class="display-4">Eastside Stages Studio 2 Summary</h1>
-                    </div>
-                </div>
-                <div class="row pb-3">
-                    <div class="col-sm-12 col-lg-5 card-col">
-                        <div class="card-col-content ">
-                            <p class="h3 text-center text-red">Specs</p>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">25’ x 25’</li>
-                                <li class="list-group-item">14’ Ceiling</li>
-                                <li class="list-group-item">Fixed Grid</li>
-                                <li class="list-group-item">100A 3 Phase Power</li>
-                            </ul>
-                        </div>
-                        <div class="text-center" style="width: 75%; margin: 2em auto;">
-                            <a href="/studios/studio-e" class="btn btn-lg "> More Info</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-lg-7 studio-img-col">
-                        <img src="/images/studios/Studio-B.png" class="img-fluid" alt="" data-aos="zoom-in-left">
-{#                        <div class="four-images">#}
-{#                            <h1 class="text-center">Our Space</h1>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-1.jpg"#}
-{#                               data-lightbox="studio-e-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-1.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-2.jpg"#}
-{#                               data-lightbox="studio-e-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-2.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/set-3.jpg"#}
-{#                               data-lightbox="studio-e-images" data-title="My caption">#}
-{#                                <img src="/images/studios/studio-a/set-photos/set-3.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                            <a class="four-images-img-link" href="/images/studios/studio-a/set-photos/studio-4.jpg"#}
-{#                               data-lightbox="studio-e-images" data-title="My caption"> <img#}
-{#                                        src="/images/studios/studio-a/set-photos/studio-4.jpg" alt="" class="img-fluid">#}
-{#                            </a>#}
-{#                        </div>#}
-                    </div>
-                </div>
-            </div>
-
+            {% endfor %}
         </div>
+
 
     </div>
 
