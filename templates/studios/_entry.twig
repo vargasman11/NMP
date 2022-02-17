@@ -109,36 +109,18 @@
         <div class="col-sm-12">
             <p class="display-4 text-center py-5">See our other studios</p>
         </div>
-        <div class="studio__circle">
-            <div class="studio_circle-bg" id="studio__cicle-a"></div>
-            <a href="#studio-a">
-                <p>Studio A</p>
-            </a>
-        </div>
-        <div class="studio__circle">
-            <div class="studio_circle-bg" id="studio__cicle-b"></div>
-            <a href="#studio-b">
-                <p>Studio B</p>
-            </a>
-        </div>
-        <div class="studio__circle">
-            <div class="studio_circle-bg" id="studio__cicle-rooftoop"></div>
-            <a href="#studio-rooftop">
-                <p>Rooftop</p>
-            </a>
-        </div>
-        <div class="studio__circle">
-            <div class="studio_circle-bg" id="studio__cicle-d"></div>
-            <a href="#studio-d">
-                <p>Studio D</p>
-            </a>
-        </div>
-        <div class="studio__circle">
-            <div class="studio_circle-bg" id="studio__cicle-e"></div>
-            <a href="#studio-e">
-                <p>Studio E</p>
-            </a>
-        </div>
+
+        {% set entries = craft.entries().section('studios').orderBy('dateCreated ASC').all() %}
+        {% for entry in entries %}
+            <div class="studio__circle">
+                {% set images = entry.studioSquareImage %}
+                <div class="studio_circle-bg" {% for img in images %}style="background-image: url('{{ img.getUrl }}')"{% endfor %}></div>
+                <a href="{{ entry.url }}">
+                    <p>{{ entry.title }}</p>
+                </a>
+            </div>
+        {% endfor %}
+
     </div>
 
 </div>

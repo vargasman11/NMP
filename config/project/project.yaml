@@ -1,4 +1,4 @@
-dateModified: 1644896363
+dateModified: 1645070973
 email:
   fromEmail: vargasman11@gmail.com
   fromName: nmp
@@ -19,6 +19,7 @@ meta:
     8c419f6e-b330-474e-b61b-753dbbe63324: 'About Page' # About Page
     9b3a76f3-b105-4ce0-aca9-277a6f69aac1: Clients # Clients
     9ea88031-3b47-4ba1-a469-8414b49d074f: Default # Default
+    9f224851-c563-48d3-b102-cd94390d4ec4: 'Studio Index Subtitle' # Studio Index Subtitle
     14f42d6b-a51a-4864-be13-69de9ff89927: 'Service Title' # Service Title
     17c2d169-d836-4ecd-a0a6-13e6d350bc95: 'Home Page' # Home Page
     19d7a1c4-3142-40e9-bc2e-2c5f3f7a9767: 'Studio Entry Details' # Studio Entry Details
@@ -55,6 +56,7 @@ meta:
     c8e1aeff-4591-4db2-a014-77919380ed52: 'Home CTA Link Text' # Home CTA Link Text
     c58c2e59-0099-4463-ab88-6443163ad279: Logo # Logo
     dc93bfb6-5fb5-4e58-8343-623d2409716c: 'Studio Entry Content' # Studio Entry Content
+    e255f76d-7420-4a43-b98c-0ab7f8126550: 'Studio Square Image' # Studio Square Image
     e8155094-6cf2-45af-9c4f-f21d1acf3bf0: 'Studios Images' # Studios Images
     eb4d5f14-381c-446e-8049-5f4635926952: 'Service Link' # Service Link
     ee269c32-a9eb-43ad-80cc-e07d616caa49: Client # Client

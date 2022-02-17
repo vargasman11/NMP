@@ -27,6 +27,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: e255f76d-7420-4a43-b98c-0ab7f8126550 # Studio Square Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: dc93bfb6-5fb5-4e58-8343-623d2409716c # Studio Entry Content
             instructions: null
             label: null

@@ -10,8 +10,8 @@ fieldLayouts:
             class: null
             disabled: false
             id: null
-            instructions: null
-            label: null
+            instructions: ''
+            label: ''
             max: null
             min: null
             name: null
@@ -28,6 +28,15 @@ fieldLayouts:
             width: 100
           -
             fieldUid: ab0e245b-79b3-4607-8792-fb040c66c54b # Studio Index Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9f224851-c563-48d3-b102-cd94390d4ec4 # Studio Index Subtitle
             instructions: null
             label: null
             required: false
