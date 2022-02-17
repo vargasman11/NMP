@@ -1,4 +1,4 @@
-dateModified: 1645115043
+dateModified: 1645118976
 email:
   fromEmail: vargasman11@gmail.com
   fromName: nmp
@@ -14,6 +14,7 @@ meta:
     3d78b203-f35f-4d0b-b1b7-1a56dd78b8c6: 'Service Content' # Service Content
     3eae5d3d-7c5f-4d45-89c4-38c1f4dbd23d: 'Studio Entry Quote' # Studio Entry Quote
     5c0240cb-90c8-477f-9b86-7ba1f03781fd: 'Home Box CTA' # Home Box CTA
+    5fbd3e8e-6c05-4545-986b-d0505c56d6e1: 'Staff Images' # Staff Images
     7b72aba2-e12b-4132-b4eb-260b1a40116e: user_uploads # user_uploads
     8a8f6d5f-7942-40ee-9714-c4c36fe15fc8: 'Home Client List' # Home Client List
     8c419f6e-b330-474e-b61b-753dbbe63324: 'About Page' # About Page
@@ -24,6 +25,7 @@ meta:
     17c2d169-d836-4ecd-a0a6-13e6d350bc95: 'Home Page' # Home Page
     19d7a1c4-3142-40e9-bc2e-2c5f3f7a9767: 'Studio Entry Details' # Studio Entry Details
     31cccd38-af3f-4048-88b3-c0a4d0b124ea: 'Video Link' # Video Link
+    38fc3edc-8bd6-4939-9969-9c68e6bdced9: 'About Gallery' # About Gallery
     54edfdbc-adee-4bbd-b8de-41f3d806d858: Studios # Studios
     66bd3804-6ad6-4a39-88d2-150d91ec7518: 'Our Work Page' # Our Work Page
     66cb88c3-bf8e-47a7-b3f9-23f27d484aa4: 'Home Page' # Home Page
@@ -50,6 +52,7 @@ meta:
     b59c4a0d-0708-4852-bf98-29975137dc6f: Work # Work
     b32504b1-53b0-4840-a6e5-8c3468aa87d0: 'Studio Index Page' # Studio Index Page
     bad3baac-8d7f-4656-bc9c-123899e34d4e: 'About Content' # About Content
+    bbd5936e-5efc-41d6-a80f-a172d0b5f28d: 'About Images' # About Images
     bc0c07e7-40a0-43fc-ad0c-1f458ebe5650: 'Studio Index CTA Button Index' # Studio Index CTA Button Index
     be61f8a0-be01-4162-905e-697f90ea3881: 'Studio Entry Quote Author' # Studio Entry Quote Author
     c6bd3ec4-a657-42ad-b22b-186f545f36eb: 'About Page' # About Page
@@ -59,6 +62,7 @@ meta:
     e255f76d-7420-4a43-b98c-0ab7f8126550: 'Studio Square Image' # Studio Square Image
     e8155094-6cf2-45af-9c4f-f21d1acf3bf0: 'Studios Images' # Studios Images
     eb4d5f14-381c-446e-8049-5f4635926952: 'Service Link' # Service Link
+    ee37ff69-f057-4b82-86bb-ae118b0baec4: 'Staff Image' # Staff Image
     ee269c32-a9eb-43ad-80cc-e07d616caa49: Client # Client
     fc4c6e8b-a509-4774-b1b6-3f50578f019f: Service # Service
     fe002d08-9e95-455e-820b-6f7c12d19b5d: 'Studio Index Page' # Studio Index Page

@@ -46,6 +46,19 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: 38fc3edc-8bd6-4939-9969-9c68e6bdced9 # About Gallery
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: 'Staff Images'
+        sortOrder: 2
 handle: aboutPage
 hasTitleField: false
 name: 'About Page'

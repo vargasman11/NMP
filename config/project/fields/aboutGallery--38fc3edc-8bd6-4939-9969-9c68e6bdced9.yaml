@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 0efaa7ce-1b73-4703-ba2a-d0e1e0eb7648 # About
+handle: aboutGallery
+instructions: ''
+name: 'About Gallery'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_aboutgallery}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
