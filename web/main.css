@@ -234,10 +234,10 @@ footer .bottom-footer-row {
   padding-bottom: 2em;
 }
 #feed .feed-title {
+  text-decoration: none;
   color: #cf0015;
   font-size: 3.5em;
   text-align: center;
-  font-weight: 500;
   padding: 0.75em 0;
 }
 #feed .feed-title:hover {
@@ -1144,7 +1144,7 @@ footer .bottom-footer-row {
 .topContent p {
   color: #181c16;
   font-size: 1.4em;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
 }
 
