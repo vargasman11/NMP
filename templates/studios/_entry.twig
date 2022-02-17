@@ -25,7 +25,7 @@
     </div>
 
     <!-- Studio Details -->
-    <div class="row studio-details">
+    <div class="row studio-details" style="background-color: #f0f0f0">
         <div class="col-sm-12 col-md-8 col-lg-7 p-0">
             {% set image = entry.studioEntryFloorplan %}
             {% for img in image %}
@@ -44,6 +44,29 @@
             <div class="stuido-cta-container text-center">
                 <a href="#" class="btn btn-lg">Book Now!</a>
             </div>
+        </div>
+    </div>
+
+    <!-- Studio Gallery Images -->
+    <div class="row" id="gallery-imgs-row" data-aos="fade-up" data-aos-duration="1500">
+        <div class="col-sm-12" id="gallery-imgs">
+
+            {#            {% set myMatrixBlockQuery = craft.matrixBlocks().fieldId(30).type('gallery') %}#}
+            {% set matrixBlocks = entry.studioEntryGallery %}
+            {% for block in matrixBlocks %}
+                {% set pics = block.galleryImage %}
+                {% for pic in pics %}
+                    <a class="set-gallery-img-link" href="{{ pic.getUrl() }}"
+                    data-lightbox="image-1" data-title="My caption">
+                    <img src="{{ pic.getUrl() }}" alt="" class="img-fluid">
+                {% endfor %}
+                </a>
+            {% endfor %}
+
+            <a class="set-gallery-img-link" href="/images/studios/studio-a/set-gallery/studio-a-gallery-1.jpg"
+               data-lightbox="image-1" data-title="My caption">
+                <img src="/images/studios/studio-a/set-gallery/studio-a-gallery-1.jpg" alt="" class="img-fluid">
+            </a>
         </div>
     </div>
 
@@ -80,28 +103,7 @@
         </div>
     </div>
 
-    <!-- Studio Gallery Images -->
-    <div class="row" id="gallery-imgs-row" data-aos="fade-up" data-aos-duration="1500">
-        <div class="col-sm-12" id="gallery-imgs">
 
-{#            {% set myMatrixBlockQuery = craft.matrixBlocks().fieldId(30).type('gallery') %}#}
-            {% set matrixBlocks = entry.studioEntryGallery %}
-            {% for block in matrixBlocks %}
-            {% set pics = block.galleryImage %}
-            {% for pic in pics %}
-            <a class="set-gallery-img-link" href="{{ pic.getUrl() }}"
-               data-lightbox="image-1" data-title="My caption">
-                <img src="{{ pic.getUrl() }}" alt="" class="img-fluid">
-                {% endfor %}
-            </a>
-            {% endfor %}
-
-            <a class="set-gallery-img-link" href="/images/studios/studio-a/set-gallery/studio-a-gallery-1.jpg"
-               data-lightbox="image-1" data-title="My caption">
-                <img src="/images/studios/studio-a/set-gallery/studio-a-gallery-1.jpg" alt="" class="img-fluid">
-            </a>
-        </div>
-    </div>
 
     <div class="row studio-page__cirles-row">
         <div class="col-sm-12">

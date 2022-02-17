@@ -1,8 +1,9 @@
 .topContent {
-  padding: 2em 0px;
-  background: $cta-gradient;
-
+  background: radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
   p {
-    margin: 0;
+    color: #181c16;
+    font-size: 1.4em;
+    font-weight: 300;
+    text-align: center;
   }
 }

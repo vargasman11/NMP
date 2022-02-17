@@ -1,7 +1,161 @@
 {% extends '_wrapper.twig' %}
 {% block main %}
-    {% include('studios/studioList') %}
 
+    <div class="container-fluid p-0" id="studio">
+        <!-- HEADER -->
+        <div class="row studio-header">
+            <!-- <div class="col-sm-12 p-0">-->
+            <div class="margin-header">
+                <div class="studio__title-container">
+                    <div class="shadow" data-aos="fade-right">
+                        <p class="display-4 m-0">{{ entry.studioIndexTitle }}</p>
+                        <ul class="list-inline m-0 hide-mobile">
+                            <li class="list-inline-item">Satellite Media Tours &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Webcasts &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Interviews</li>
+                        </ul>
+                        {# MOBILE #}
+                        <ul class="list-inline m-0 show-mobile-only">
+                            <li class="list-inline-item">Satellite Media Tours &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Webcasts &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Interviews</li>
+                            <li class="list-inline-item">News Hits &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Live Shots &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">Greenscreen &nbsp;&nbsp;|</li>
+                            <li class="list-inline-item">White Cyc</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-0" id="studio">
+            <!-- Studio Circles -->
+            <div class="row studio__cirles-row">
+                <div class="col-sm-12">
+                    <p class="display-4 text-center py-5">5 Studios, Infinite Creativity</p>
+                </div>
+                <div class="studio__circle">
+                    <div class="studio_circle-bg" id="studio__cicle-a"></div>
+                    <a href="#studio-a">
+                        <p>Studio A</p>
+                    </a>
+                </div>
+                <div class="studio__circle">
+                    <div class="studio_circle-bg" id="studio__cicle-b"></div>
+                    <a href="#studio-b">
+                        <p>Studio B</p>
+                    </a>
+                </div>
+                <div class="studio__circle">
+                    <div class="studio_circle-bg" id="studio__cicle-rooftoop"></div>
+                    <a href="#studio-rooftop">
+                        <p>Rooftop</p>
+                    </a>
+                </div>
+                <div class="studio__circle">
+                    <div class="studio_circle-bg" id="studio__cicle-d"></div>
+                    <a href="#studio-d">
+                        <p>Eastside Studio D</p>
+                    </a>
+                </div>
+                <div class="studio__circle">
+                    <div class="studio_circle-bg" id="studio__cicle-e"></div>
+                    <a href="#studio-e">
+                        <p>Eastside Studio E</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MWBE STRIPE -->
+            <div class="row" id="mwbaStripe">
+                <div class="container">
+                    <div class="row">
+                        <!-- <div class="col-sm-12"> -->
+                        <div class="col-sm-10 mx-auto">
+                            <div class="text-center">
+                                {# <p class="lead">Two shooting studios, a working kitchen set and a rooftop located on Howard Street in #}
+                                {# Soho, NYC. If you like good people, sun light and exceptional client service you will #}
+                                {# love our facility. Stop by and check us out!</p> #}
+                                {# <p class="lead">Five shooting studios two at our location on Howard Street in Soho another #}
+                                {# two in our brand new facility on Houston Street ( Eastside Stages). Among our many #}
+                                {# offerings are a working kitchen set, a rooftop location with city views, and as always #}
+                                {# our exceptional client services. Contact us to schedule a tour of any of our facilities #}
+                                {# at your convenience.</p> #}
+                                <p class="lead">Two state of the art facilities - one in Soho & one on the LES with a
+                                    combined five shooting studios. Whether you need a functioning kitchen set, a loft look
+                                    with exposed brick, or a custom branded set we have what you’re looking for. And if we
+                                    don’t, we’ll build it. Contact us to schedule a tour, we’d love to show you around</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STUDIO DETAILS -->
+            <div class="row studios-row">
+                {# Create an entry query and set some parameters on it #}
+                {% set entryQuery = craft.entries().section('studios').order('dateCreated ASC').all() %}
+                {# Execute the query and get the results #}
+                {% set entries = entryQuery %}
+                {% for entry in entries %}
+                    {% if loop.index % 2 == 0 %}
+                        <div class="container-fluid studio-container  {% if loop.index % 2 == 0 %}{% endif %}" id="studio-{{ entry.title }}" {% if loop.index % 2 == 0 %}style="background-color: #f0f0f0"{% endif %}>
+                            <div class="row p-0">
+                                <div class="col-sm-12">
+                                    <h1 class="display-4">{{ entry.title }}</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-5 card-col border-red">
+                                    <div class="card-col-content " style="border: none">
+                                        {{ entry.studioEntryDetails }}
+                                    </div>
+                                    <div class="text-center" style="width: 75%; margin: 2em auto;">
+                                        <a href="{{ entry.getUrl }}" class="btn btn-lg"> More Info</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-lg-7 studio-img-col">
+                                    {% set images = entry.studioEntryFloorplan %}
+                                    {% for img in images %}
+                                        <img src="{{ img.getUrl }}" class="img-fluid" alt="" data-aos="zoom-in-left">
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="container-fluid studio-container bg-light" id="studio-{{ entry.title }}"
+                             {% if loop.index % 2 == 0 %}style="background-color: #ffffff;" {% endif %} >
+                            <div class="row p-0">
+                                <div class="col-sm-12">
+                                    <h1 class="display-4">{{ entry.title }}</h1>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-lg-7 studio-img-col">
+                                    {% set images = entry.studioEntryFloorplan %}
+                                    {% for img in images %}
+                                        <img src="{{ img.getUrl }}" class="img-fluid" alt="" data-aos="zoom-in-left">
+                                    {% endfor %}
+                                </div>
+                                <div class="col-sm-12 col-lg-5 card-col border-red">
+                                    <div class="card-col-content " >
+                                        {{ entry.studioEntryDetails }}
+                                    </div>
+                                    <div class="text-center" style="width: 75%; margin: 2em auto;">
+                                        <a href="{{ entry.getUrl }}" class="btn btn-lg"> More Info</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+
+        </div>
+
+    </div>
 
     <div class="container-fluid" id="studioCTA">
         <div class="row">

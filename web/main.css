@@ -54,126 +54,16 @@
 #nav {
   background-color: rgba(59, 56, 56, 0.98);
   padding: 0 3em;
-  position: fixed;
   z-index: 1000;
 }
-#nav .main-nav {
-  padding: 1em 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#nav .main-nav .btn-contact {
-  color: #fff !important;
+#nav .btn-contact {
   background-color: #cf0015;
-}
-#nav .main-nav .btn-contact:hover {
-  background-color: #94000f;
-}
-#nav .main-nav .nav__home {
-  display: block;
-}
-#nav .main-nav .nav__primary-menu {
-  text-align: right;
-  margin-bottom: 0;
-}
-#nav .main-nav .nav__primary-menu .primary-item {
-  margin: 0 0 0 1em;
-}
-#nav .main-nav .nav__primary-menu .primary-item a {
   color: #ffffff;
 }
-#nav .main-nav .nav__primary-menu .primary-item .nav__sub-menu {
-  display: none;
-  position: absolute;
-  background-color: #edeae6;
-  padding: 0px;
-  list-style: none;
-  border-radius: 1em;
-  overflow: hidden;
-  text-align: left;
-  z-index: 100;
-}
-#nav .main-nav .nav__primary-menu .primary-item .nav__sub-menu li {
-  overflow: hidden;
-}
-#nav .main-nav .nav__primary-menu .primary-item .nav__sub-menu li a {
-  color: #181c16;
-  text-decoration: none;
-  padding: 1em;
-  height: 100%;
-  width: 100%;
-  display: block;
-}
-#nav .main-nav .nav__primary-menu .primary-item .nav__sub-menu li a:hover {
-  background-color: #f0e3d2;
-  text-decoration: none;
-}
-#nav .main-nav .nav__primary-menu .primary-item:hover .nav__sub-menu {
-  display: block;
-}
-#nav .btn-current {
-  background-color: #cf0015;
-}
-#nav .mobile-nav {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 2em 0px;
-  align-items: center;
-  background-color: rgba(59, 56, 56, 0.98);
-}
-#nav .mobile-nav #mobile-nav__menu-btn {
-  color: #ffffff;
-}
-#nav .mobile-nav #mobile-nav__menu-btn i {
-  font-size: 2.5em;
-}
-#nav .mobile-nav__primary-menu {
-  display: none;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  background-color: rgba(59, 56, 56, 0.98);
-  position: absolute;
-  left: 0;
-  width: 100%;
-  padding: 0px 2em;
-  z-index: 100;
-}
-#nav .mobile-nav__primary-menu li {
-  padding: 0.5em;
-}
-#nav .mobile-nav__primary-menu li a {
-  color: #ffffff;
-}
-#nav .mobile-nav__primary-menu li .mobile-nav__sub-menu {
-  padding: 0px;
-  background-color: #ffffff;
-  display: none;
-}
-#nav .mobile-nav__primary-menu li .mobile-nav__sub-menu li {
-  padding-left: 1em;
-  border-bottom: solid 1px #181c16;
-}
-#nav .mobile-nav__primary-menu li .mobile-nav__sub-menu li a {
-  color: #181c16;
+#nav .btn-contact:hover {
+  background-color: #cf4452;
 }
 
-@media (max-width: 978px) {
-  .nav__home {
-    width: 80%;
-  }
-
-  .main-nav {
-    display: none !important;
-  }
-}
-@media (min-width: 978px) {
-  .mobile-nav {
-    display: none !important;
-  }
-}
 footer {
   background-color: black;
   color: #ffffff;
@@ -820,6 +710,7 @@ footer .bottom-footer-row {
 }
 #profiles .card {
   width: 32.5%;
+  padding: 0;
 }
 #profiles .card .img-container {
   background-size: cover;
@@ -845,7 +736,7 @@ footer .bottom-footer-row {
   background-image: url(1ba28ccf9e9102163e0f.jpg);
 }
 #profiles .card .card-body {
-  background-color: #edeae6;
+  background-color: #f0f0f0;
 }
 #profiles .card .card-body h5 {
   color: #cf0015;
@@ -1025,8 +916,6 @@ footer .bottom-footer-row {
   background-color: rgba(59, 56, 56, 0.8);
   text-align: left;
   padding: 1em 3em 1.8em;
-  margin-left: 3em;
-  margin-top: 100px;
 }
 #jumbo .jumbo-header .jumbo-page-header-content {
   height: 100%;
@@ -1039,19 +928,6 @@ footer .bottom-footer-row {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  #jumbo .jumbo-header .shadow {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
-  #jumbo .jumbo-header .shadow .display-4 {
-    font-size: 2em;
-  }
-  #jumbo .jumbo-header .jumbo-page-header-content {
-    margin: 0 auto;
-  }
-}
 #jumboSlide .jumboGlide .glide__slides {
   list-style: none !important;
 }
@@ -1278,11 +1154,13 @@ footer .bottom-footer-row {
   }
 }
 .topContent {
-  padding: 2em 0px;
   background: radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
 }
 .topContent p {
-  margin: 0;
+  color: #181c16;
+  font-size: 1.4em;
+  font-weight: 300;
+  text-align: center;
 }
 
 #homeCTA {
