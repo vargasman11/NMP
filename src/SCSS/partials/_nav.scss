@@ -6,9 +6,20 @@
   //position: fixed;
   z-index: 1000;
 
+  .btn-group {
+    .btn {
+      color: rgba(255, 255, 255, .55);
+    }
+    .dropdown-toggle{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .btn-contact {
     background-color: $red;
     color: #ffffff;
+    margin-left: 10px;
   }
 
   .btn-contact:hover {

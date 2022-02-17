@@ -1,4 +1,4 @@
-dateModified: 1645070973
+dateModified: 1645115043
 email:
   fromEmail: vargasman11@gmail.com
   fromName: nmp
@@ -73,10 +73,10 @@ plugins:
     enabled: true
     schemaVersion: '2.0'
 system:
-  edition: solo
+  edition: pro
   live: true
   name: nmp
-  schemaVersion: 3.7.32
+  schemaVersion: 3.7.33
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false

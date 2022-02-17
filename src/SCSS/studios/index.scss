@@ -49,7 +49,7 @@
             color: #cf0015;
             font-size: 3.5em;
             text-align: center;
-            font-weight: 500 !important;
+            //font-weight: 500 !important;
         }
 
         .studio__circle {
@@ -188,11 +188,13 @@
             .card-col-content {
                 width: 75%;
                 padding: 1em;
-                border: solid 1px #d6d6d6;
-                background-color: #fff;
+                //border: solid 1px #d6d6d6;
+                //background-color: #fff;
+                background-color: #dedede;
                 margin: 0 auto;
 
                 ul {
+                    list-style: none;
                     li {
                         background-color: inherit;
                     }

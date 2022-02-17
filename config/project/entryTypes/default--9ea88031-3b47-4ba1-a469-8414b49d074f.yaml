@@ -80,6 +80,10 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+        name: Content
+        sortOrder: 1
+      -
+        elements:
           -
             fieldUid: 41837668-480b-441a-a73f-6eec94086c50 # Studio Entry Gallery
             instructions: null
@@ -89,8 +93,8 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
-        name: Content
-        sortOrder: 1
+        name: 'Studio Gallery'
+        sortOrder: 2
 handle: default
 hasTitleField: true
 name: Default
