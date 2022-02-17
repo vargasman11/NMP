@@ -838,6 +838,16 @@ footer .bottom-footer-row {
   text-align: center;
 }
 
+#about-content {
+  background: radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
+}
+#about-content p {
+  color: #181c16;
+  font-size: 1.4em !important;
+  font-weight: 500 !important;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   #about-header {
     height: 600px;

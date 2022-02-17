@@ -2,6 +2,18 @@ defaultPlacement: end
 enableVersioning: true
 handle: studioIndexPage
 name: 'Studio Index Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - preview
+      -
+        - urlFormat
+        - ''
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
   af749d3e-842b-44a9-8eab-3a82a5f7e956: # nmp

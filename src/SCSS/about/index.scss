@@ -1,45 +1,62 @@
-@import'profiles';
-@import'sustainability';
-#about-header{
-    position: relative;
-    height: 700px;
-    overflow: hidden;
-    background-image: url('./../images/team/team-header-1.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    .header-title-div{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      
-        .shadow {
-            background-color: rgba(59, 56, 56, .8);     
-            padding: 1em 2em 1.5em;
-            transform: translateY(50%);
-        }
-        p{
-            color: $white;
-            margin-bottom: 0;
-            text-align: center;
-        }
+@import 'profiles';
+@import 'sustainability';
+
+#about-header {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  background-image: url('./../images/team/team-header-1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  .header-title-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .shadow {
+      background-color: rgba(59, 56, 56, .8);
+      padding: 1em 2em 1.5em;
+      transform: translateY(50%);
     }
+
+    p {
+      color: $white;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
 }
 
-@media(max-width:768px) {
-    #about-header{
-            height: 600px;
-        .header-title-div{                      
-            .shadow {
-                transform: translateY(25%);        
-                width: 80%;        
-            }
-            p{
-                font-size: 2.4em;
-            }
-        }
+#about-content {
+  background: radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
+
+  p {
+    color: #181c16;
+    font-size: 1.4em !important;
+    font-weight: 500 !important;
+    text-align: center;
+  }
+}
+
+
+@media(max-width: 768px) {
+  #about-header {
+    height: 600px;
+
+    .header-title-div {
+      .shadow {
+        transform: translateY(25%);
+        width: 80%;
+      }
+
+      p {
+        font-size: 2.4em;
+      }
     }
+  }
 }
