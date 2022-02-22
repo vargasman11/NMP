@@ -1,0 +1,40 @@
+fieldLayouts:
+  18a8d14d-02b1-4778-b87a-9d57fc9fcb31:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: staffImages
+hasUrls: true
+name: 'Staff Images'
+settings:
+  path: '@webroot/images/staff_images'
+sortOrder: 6
+titleTranslationKeyFormat: null
+titleTranslationMethod: null
+type: craft\volumes\Local
+url: /images/staff_images

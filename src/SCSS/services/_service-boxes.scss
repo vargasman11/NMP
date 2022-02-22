@@ -2,13 +2,10 @@
     padding: 4em 0px 5em;
 
     .display-4 {
-        // font-weight: 600;
-        font-weight: 500;
         color: $red;
     }
 
     .service-boxes-col {
-        // padding: 5px;
         padding: 0px;
     }
 
@@ -28,7 +25,9 @@
             width: 100%;
             background-color: rgba(0, 0, 0, .5);
             display: flex;
-            justify-content: center;
+            //justify-content: center;
+            justify-content: flex-start;
+            padding-top: 7vh;
             align-items: center;
             flex-direction: column;
 

@@ -9,7 +9,7 @@
         <div class="row profiles-row">
             <div class="card">
                 <div class="img-container" id="img-container-1"></div>
-                <!-- <img src="/images/team/TeamSlide-4.jpg" class="card-img-top" alt="..."> -->
+                <!-- <img src="/images/team/TeamSlide-4-new.jpg" class="card-img-top" alt="..."> -->
                 <div class="card-body">
                     <h5 class="card-title">Person Name</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -28,6 +28,37 @@
             </div>
             <div class="card">
                 <div class="img-container" id="img-container-3"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Colin</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-info">Email</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row profiles-row pt-4">
+            <div class="card">
+                <div class="img-container" id="img-container-4"></div>
+                <!-- <img src="/images/team/TeamSlide-4-new.jpg" class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Person Name</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-info">Email</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container" id="img-container-5"></div>
+                <div class="card-body">
+                    <h5 class="card-title">Person Name</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-info">Email</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container" id="img-container-6"></div>
                 <div class="card-body">
                     <h5 class="card-title">Colin</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of
@@ -109,22 +140,23 @@
             </div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                {% set matrixBlocks = entry.aboutGallery %}
-                {% for block in matrixBlocks %}
-                    {% set pics = block.staffImage %}
-                    {% for pic in pics %}
-                        <div class="col-sm-12 col-md-3 p-3">
-                            <a class="set-gallery-img-link" href="{{ pic.getUrl() }}"
-                               data-lightbox="image-1" data-title="My caption">
-                                <img src="{{ pic.getUrl() }}" alt="" class="img-fluid">
-                            </a>
-                        </div>
-                    {% endfor %}
-                {% endfor %}
-            </div>
-        </div>
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                {% set matrixBlocks = entry.aboutGallery %}#}
+{#                {% for block in matrixBlocks %}#}
+{#                    {% set pics = block.staffImage %}#}
+{#                    {% for pic in pics %}#}
+{#                        <div class="col-sm-12 col-md-3 p-3">#}
+{#                            <a class="set-gallery-img-link" href="{{ pic.getUrl() }}"#}
+{#                               data-lightbox="image-1" data-title="My caption">#}
+{#                                <img src="{{ pic.getUrl() }}" alt="" class="img-fluid">#}
+{#                            </a>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+{#                {% endfor %}#}
+{#            </div>#}
+{#        </div>#}
+
     </div>
 
 </div>

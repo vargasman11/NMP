@@ -1,4 +1,4 @@
-dateModified: 1645120799
+dateModified: 1645500293
 email:
   fromEmail: vargasman11@gmail.com
   fromName: nmp
@@ -15,9 +15,11 @@ meta:
     3eae5d3d-7c5f-4d45-89c4-38c1f4dbd23d: 'Studio Entry Quote' # Studio Entry Quote
     5c0240cb-90c8-477f-9b86-7ba1f03781fd: 'Home Box CTA' # Home Box CTA
     5fbd3e8e-6c05-4545-986b-d0505c56d6e1: 'Staff Images' # Staff Images
+    6f1c4097-8c51-4beb-bd10-2accead3728c: 'Staff Name' # Staff Name
     7b72aba2-e12b-4132-b4eb-260b1a40116e: user_uploads # user_uploads
     8a8f6d5f-7942-40ee-9714-c4c36fe15fc8: 'Home Client List' # Home Client List
     8c419f6e-b330-474e-b61b-753dbbe63324: 'About Page' # About Page
+    8e39dee2-04d7-4add-9e23-1d716301fbfe: 'Staff Email' # Staff Email
     9b3a76f3-b105-4ce0-aca9-277a6f69aac1: Clients # Clients
     9ea88031-3b47-4ba1-a469-8414b49d074f: Default # Default
     9f224851-c563-48d3-b102-cd94390d4ec4: 'Studio Index Subtitle' # Studio Index Subtitle
@@ -39,6 +41,9 @@ meta:
     4197d6db-53d6-4bc0-9610-5571ee950886: 'Work Content ' # Work Content 
     4795b9be-bf70-401f-aa15-9078f485f966: 'Home Sub Title' # Home Sub Title
     6967b4c7-2778-4944-9ccc-07ea690ed289: 'Studio Index Page' # Studio Index Page
+    8463deb2-3220-4567-b912-83379cc6dbb4: Staff # Staff
+    29796eca-f710-4771-abf6-b4fa8ea85dce: 'Staff Image' # Staff Image
+    43241fc9-f311-4391-be98-1d10e99ecb9d: Staffer # Staffer
     3583603f-9b08-4e32-a9fc-eab4950d0b01: 'Work Title' # Work Title
     6062591b-794b-4999-bb3c-dbc588210866: 'Work Video Embed' # Work Video Embed
     41837668-480b-441a-a73f-6eec94086c50: 'Studio Entry Gallery' # Studio Entry Gallery
@@ -54,10 +59,12 @@ meta:
     bad3baac-8d7f-4656-bc9c-123899e34d4e: 'About Content' # About Content
     bbd5936e-5efc-41d6-a80f-a172d0b5f28d: 'About Images' # About Images
     bc0c07e7-40a0-43fc-ad0c-1f458ebe5650: 'Studio Index CTA Button Index' # Studio Index CTA Button Index
+    bd58b978-882d-4dc4-91b6-60f1a9c80fcd: 'Staff Image Hover' # Staff Image Hover
     be61f8a0-be01-4162-905e-697f90ea3881: 'Studio Entry Quote Author' # Studio Entry Quote Author
     c6bd3ec4-a657-42ad-b22b-186f545f36eb: 'About Page' # About Page
     c8e1aeff-4591-4db2-a014-77919380ed52: 'Home CTA Link Text' # Home CTA Link Text
     c58c2e59-0099-4463-ab88-6443163ad279: Logo # Logo
+    c915e28d-75c5-47bd-96e4-761b61ec3b60: 'Staff Images' # Staff Images
     dc93bfb6-5fb5-4e58-8343-623d2409716c: 'Studio Entry Content' # Studio Entry Content
     e255f76d-7420-4a43-b98c-0ab7f8126550: 'Studio Square Image' # Studio Square Image
     e8155094-6cf2-45af-9c4f-f21d1acf3bf0: 'Studios Images' # Studios Images

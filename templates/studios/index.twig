@@ -2,57 +2,56 @@
 {% block main %}
 
     <div class="container-fluid p-0" id="studio">
-        <!-- HEADER -->
-        <div class="row studio-header">
-
-                <div class="studio__title-container">
-                    <div class="row">
-                        <div class="col-10 col-md-6 offset-md-2 shadow" data-aos="fade-right">
-                            <p class="display-4 m-0">{{ entry.studioIndexTitle }}</p>
+        <div class="row services-page-header studio-jumbo">
+            <div class=" margin-header">
+                <div class="services-page-header-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="shadow" data-aos="zoom-in-right">
+                                    <p class="display-4 m-0 text-white">{{ entry.studioIndexTitle }}</p>
                                     {{ entry.studioIndexSubtitle }}
-                        </div>
-                    </div>
-                </div>
-{#            </div>#}
-        </div>
-
-        <div class="container-fluid p-0" id="studio">
-            <!-- Studio Circles -->
-            <div class="row studio__cirles-row">
-                <div class="col-sm-12">
-                    <p class="display-4 text-center py-5">5 Studios, Infinite Creativity</p>
-                </div>
-                {% set entries = craft.entries().section('studios').orderBy('dateCreated ASC').all() %}
-                {# Display the entries #}
-                {% for entry in entries %}
-                    <div class="studio__circle">
-                        {% set images = entry.studioSquareImage %}
-                        <div class="studio_circle-bg"  {% for img in images %}style="background-image: url('{{ img.getUrl }}')"{% endfor %}></div>
-                        <a href="{{ entry.url }}">
-                            <p>{{ entry.title }}</p>
-                        </a>
-                    </div>
-
-                {% endfor %}
-
-            </div>
-
-            <!-- MWBE STRIPE -->
-            <div class="row" id="mwbaStripe">
-                <div class="container">
-                    <div class="row">
-                        <!-- <div class="col-sm-12"> -->
-                        <div class="col-sm-10 mx-auto">
-                            <div class="text-center">
-                                <p class="lead">Two state of the art facilities - one in Soho & one on the LES with a
-                                    combined five shooting studios. Whether you need a functioning kitchen set, a loft
-                                    look with exposed brick, or a custom branded set we have what you’re looking for. And if
-                                    we don’t, we’ll build it. Contact us to schedule a tour, we’d love to show you around</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+
+
+        <div class="container-fluid p-0" id="studio">
+            <!-- Studio Circles -->
+{#            <div class="row studio__cirles-row">#}
+{#                <div class="col-sm-12">#}
+{#                    <p class="display-4 text-center py-5">5 Studios, Infinite Creativity</p>#}
+{#                </div>#}
+{#                {% set entries = craft.entries().section('studios').orderBy('dateCreated ASC').all() %}#}
+{#                #}{# Display the entries #}
+{#                {% for entry in entries %}#}
+{#                    <div class="studio__circle">#}
+{#                        {% set images = entry.studioSquareImage %}#}
+{#                        <div class="studio_circle-bg"  {% for img in images %}style="background-image: url('{{ img.getUrl }}')"{% endfor %}></div>#}
+{#                        <a href="{{ entry.url }}">#}
+{#                            <p>{{ entry.title }}</p>#}
+{#                        </a>#}
+{#                    </div>#}
+{#                {% endfor %}#}
+{#            </div>#}
+
+            <!--  TOP CONTENT  -->
+            <div class="container-fluid topContent">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 mx-auto py-5">
+                        <p class="display-4 text-center py-5 five-studios">5 Studios, Infinite Creativity</p>
+                        {{ entry.studioContent }}
+                        <hr style="border-bottom:solid 3px #cf0015; width: 20%; margin: 0 auto; opacity: 1;">
+                    </div>
+                </div>
+            </div>
+
+
 
             <!-- STUDIO DETAILS -->
             <div class="row studios-row">
@@ -88,7 +87,7 @@
                             </div>
                         </div>
                     {% else %}
-                        <div class="container-fluid studio-container bg-light" id="studio-{{ entry.title }}"
+                        <div class="container-fluid studio-container" style="background-color: #dedede" id="studio-{{ entry.title }}"
                              {% if loop.index % 2 == 0 %}style="background-color: #ffffff;" {% endif %} >
                             <div class="row p-0">
                                 <div class="col-sm-12">

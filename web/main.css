@@ -277,8 +277,9 @@ footer .bottom-footer-row {
 .studio-page .studio-blurb p {
   color: #181c16;
   font-size: 1.4em;
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 .studio-page .studio-details {
   padding: 3em;
@@ -334,7 +335,6 @@ footer .bottom-footer-row {
 }
 .studio-page .studio-cta .display-4 {
   color: #cf0015;
-  font-weight: 500;
 }
 .studio-page .studio-cta .btn {
   background-color: #3b3838;
@@ -402,7 +402,6 @@ footer .bottom-footer-row {
   color: #cf0015;
   font-size: 3.5em;
   text-align: center;
-  font-weight: 500 !important;
 }
 .studio-page .studio-page__cirles-row .studio__circle {
   height: 200px;
@@ -444,6 +443,10 @@ footer .bottom-footer-row {
   position: absolute;
   bottom: 0;
   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 7vh;
 }
 .studio-page .studio-page__cirles-row .studio__circle:hover {
   margin-top: -1em;
@@ -624,7 +627,7 @@ footer .bottom-footer-row {
 #studio .studios-row .card-col .card-col-content {
   width: 75%;
   padding: 1em;
-  background-color: #dedede;
+  background-color: #fff;
   margin: 0 auto;
 }
 #studio .studios-row .card-col .card-col-content ul {
@@ -719,6 +722,24 @@ footer .bottom-footer-row {
 }
 #profiles .card #img-container-3:hover {
   background-image: url(1ba28ccf9e9102163e0f.jpg);
+}
+#profiles .card #img-container-4 {
+  background-image: url(3db5573197aaf9e43e3b.jpg);
+}
+#profiles .card #img-container-4:hover {
+  background-image: url(0620e01b3b66419cd33f.jpg);
+}
+#profiles .card #img-container-5 {
+  background-image: url(caf9312d1da098380722.jpg);
+}
+#profiles .card #img-container-5:hover {
+  background-image: url(e1e8b84c3d4648c06bef.jpg);
+}
+#profiles .card #img-container-6 {
+  background-image: url(d80696d95a2a1ebfc866.jpg);
+}
+#profiles .card #img-container-6:hover {
+  background-image: url(60bab6a2d69cee3d8179.jpg);
 }
 #profiles .card .card-body {
   background-color: #f0f0f0;
@@ -1018,13 +1039,11 @@ footer .bottom-footer-row {
 }
 #contactCTA .lead {
   color: #cf0015;
-  font-weight: normal;
   font-size: 1.4em;
   margin-bottom: 0;
 }
 #contactCTA .display-4 {
   color: #cf0015;
-  font-weight: 500 !important;
 }
 #contactCTA .btn {
   background-color: #3b3838;
@@ -1151,11 +1170,19 @@ footer .bottom-footer-row {
 .topContent {
   background: radial-gradient(ellipse at center, #FFFFFF, #c0bfbe);
 }
+.topContent .five-studios {
+  color: #cf0015;
+  font-size: 3.5em;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 0;
+}
 .topContent p {
   color: #181c16;
   font-size: 1.4em;
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 #homeCTA {
@@ -1392,7 +1419,6 @@ footer .bottom-footer-row {
   padding: 4em 0px 5em;
 }
 #service-boxes .display-4 {
-  font-weight: 500;
   color: #cf0015;
 }
 #service-boxes .service-boxes-col {
@@ -1414,7 +1440,8 @@ footer .bottom-footer-row {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-top: 7vh;
   align-items: center;
   flex-direction: column;
 }
@@ -1495,6 +1522,29 @@ body {
 
 #eapps-instagram-feed-1 > a[style] {
   display: none !important;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+/* ============ desktop view .end// ============ */
+.studio-jumbo {
+  background-image: url(b57735b041f7370ad0a7.jpg);
+}
+
+.work-jumbo {
+  background-image: url(262f68e725e8f24a50d5.jpg);
 }
 
 /*# sourceMappingURL=main.css.map*/

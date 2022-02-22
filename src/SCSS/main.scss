@@ -43,3 +43,21 @@ body{
   display: none !important;
 }
 
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{ display: none; }
+  .navbar .nav-item:hover .nav-link{   }
+  .navbar .nav-item:hover .dropdown-menu{ display: block; }
+  .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
+/* ============ desktop view .end// ============ */
+
+.studio-jumbo{
+  background-image: url('./../images/heros/hero-img-2.jpg');
+}
+
+.work-jumbo{
+  background-image: url("./../images/studios/circles-studio-e.jpg");
+}
+

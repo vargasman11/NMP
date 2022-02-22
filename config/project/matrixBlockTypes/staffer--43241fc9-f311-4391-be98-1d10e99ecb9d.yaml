@@ -1,0 +1,156 @@
+field: 8463deb2-3220-4567-b912-83379cc6dbb4 # Staff
+fieldLayouts:
+  0fb4c727-81cb-4f4d-8de6-fa979ff4568a:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6f1c4097-8c51-4beb-bd10-2accead3728c # Staff Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8e39dee2-04d7-4add-9e23-1d716301fbfe # Staff Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 29796eca-f710-4771-abf6-b4fa8ea85dce # Staff Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: bd58b978-882d-4dc4-91b6-60f1a9c80fcd # Staff Image Hover
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6f1c4097-8c51-4beb-bd10-2accead3728c: # Staff Name
+    columnSuffix: avyznwpo
+    contentColumnType: text
+    fieldGroup: null
+    handle: staffName
+    instructions: ''
+    name: 'Staff Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8e39dee2-04d7-4add-9e23-1d716301fbfe: # Staff Email
+    columnSuffix: yubdnndg
+    contentColumnType: text
+    fieldGroup: null
+    handle: staffEmail
+    instructions: ''
+    name: 'Staff Email'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  29796eca-f710-4771-abf6-b4fa8ea85dce: # Staff Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: staffImage
+    instructions: ''
+    name: 'Staff Image'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:c915e28d-75c5-47bd-96e4-761b61ec3b60' # Staff Images
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7b72aba2-e12b-4132-b4eb-260b1a40116e' # user_uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:c915e28d-75c5-47bd-96e4-761b61ec3b60' # Staff Images
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  bd58b978-882d-4dc4-91b6-60f1a9c80fcd: # Staff Image Hover
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: staffImageHover
+    instructions: ''
+    name: 'Staff Image Hover'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:c915e28d-75c5-47bd-96e4-761b61ec3b60' # Staff Images
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:7b72aba2-e12b-4132-b4eb-260b1a40116e' # user_uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:c915e28d-75c5-47bd-96e4-761b61ec3b60' # Staff Images
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: staffer
+name: Staffer
+sortOrder: 1
